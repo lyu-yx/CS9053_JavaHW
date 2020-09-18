@@ -18,6 +18,26 @@ public class TwoDimensionalArray {
 		 * each array in twoDimArray, and one loop to loop over each element
 		 * in that array
 		 */
-		System.out.println("twoDimArray is " + twoDimArray);
+		for (int i = 0; i < twoDimArray.length; i++) {
+			for (int j = 0; j < twoDimArray[0].length; j++) {
+				if (i == 0) {
+					twoDimArray[0][j] = arrayOne[j];
+				} else {
+					twoDimArray[1][j] = arrayTwo[j];
+				}
+			}
+		}
+
+		for (int i = 0; i < twoDimArray.length; i++) {
+			for (int j = 0; j < twoDimArray[0].length; j++) {
+				if (i == 0) {
+					System.out.printf("%5d",twoDimArray[0][j]);
+				} else {
+					System.out.printf("%5d",twoDimArray[1][j]);
+				}
+				if (j == 4)
+					System.out.println();
+			}
+		}
 	}
 }
