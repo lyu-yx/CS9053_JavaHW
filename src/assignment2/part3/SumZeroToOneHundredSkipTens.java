@@ -16,14 +16,26 @@ public class SumZeroToOneHundredSkipTens {
 		// if (counter is not divisible by 10)
 		// then
 		//    sum += counter;
-		
+		for (int counter = 0; counter <= 100; counter++){
+			if (counter % 10 != 0) {
+				sum += counter;
+			}
+		}
+		System.out.println("SUM calculated by for loop is: " + sum);
 		sum = 0;
 		// the second loop has the structure of:
 		// if (counter is divisible by 10)
 		// then
 		//  continue
 		// and then it adds the counter to the sum if that condition does not execute
-		
+		for (int counter = 0; counter <= 100; counter++){
+			if (counter % 10 == 0) {
+				continue;
+			} else {
+				sum += counter;
+			}
+		}
+		System.out.println("SUM controled by continue is: " + sum);
 	}
 }
 
