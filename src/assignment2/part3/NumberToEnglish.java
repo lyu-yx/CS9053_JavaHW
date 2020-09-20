@@ -26,6 +26,9 @@ public class NumberToEnglish {
 		for (int i = 29; i >= 0; i--) {
 			numberofCurrentFactor = remainingNum / factorsNum[i];
 			remainingNum = remainingNum % factorsNum[i];
+			if (numberofCurrentFactor == 0)
+				continue;
+			else
 			stringBuilder.append(numberofCurrentFactor + "  " + factors[i] + ",  " );
 		}
 		stringBuilder.delete(stringBuilder.length() - 3,stringBuilder.length()); //delete the last ","
