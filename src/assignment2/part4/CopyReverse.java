@@ -25,7 +25,7 @@ public class CopyReverse {
 		 */
 		// testing
 		for (int j = 0; j < 50; j++){
-			System.out.println((boolean)(sourceArray[j] == destArray[49 - j]));
+			System.out.println((boolean)(sourceArray[j] == destArray[49 - j]));// To check if the previous process is true
 		}
 	}
 }

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="" />
+    <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javahw/assignment2/part3/NumberToEnglish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/assignment2/part3/NumberToEnglish.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -15,9 +21,18 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\NYU class\Intro to Java\javahw\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1hdkWQXJ5aaq0XZmcBufLbq1G4K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,21 +42,36 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignment2/part2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignment2/part4" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3831522" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part4" />
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part3" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MuayThai">
+  <component name="RunManager" selected="Application.Grades">
+    <configuration name="ArrayStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment2.part4.ArrayStats" />
+      <module name="javahw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment2.part4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Grades" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assignment2.part2.Grades" />
       <module name="javahw" />
@@ -55,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GravityCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment2.part1.GravityCalculator" />
+    <configuration name="LargestPairProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment2.part4.LargestPairProduct" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment2.part1.*" />
+          <option name="PATTERN" value="assignment2.part4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MuayThai" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment2.part2.MuayThai" />
+    <configuration name="NumberToEnglish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment2.part3.NumberToEnglish" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment2.part2.*" />
+          <option name="PATTERN" value="assignment2.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WindChill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment2.part2.WindChill" />
+    <configuration name="TwoDimensionalArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment2.part4.TwoDimensionalArray" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment2.part2.*" />
+          <option name="PATTERN" value="assignment2.part4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,10 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MuayThai" />
-        <item itemvalue="Application.WindChill" />
         <item itemvalue="Application.Grades" />
-        <item itemvalue="Application.GravityCalculator" />
+        <item itemvalue="Application.NumberToEnglish" />
+        <item itemvalue="Application.TwoDimensionalArray" />
+        <item itemvalue="Application.LargestPairProduct" />
+        <item itemvalue="Application.ArrayStats" />
       </list>
     </recent_temporary>
   </component>
@@ -114,38 +145,167 @@
       <option name="presentableId" value="Default" />
       <updated>1600348390604</updated>
       <workItem from="1600348397714" duration="4214000" />
-      <workItem from="1600391433223" duration="1528000" />
+      <workItem from="1600391433223" duration="17849000" />
+      <workItem from="1600612561262" duration="194000" />
+      <workItem from="1600735108289" duration="217000" />
     </task>
+    <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
+      <created>1600406538446</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600406538446</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Backup for Intro to Java HW.">
+      <created>1600408529968</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600408529968</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Backup for Intro to Java HW.">
+      <created>1600408685912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600408685912</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Backup for Intro to Java HW.">
+      <created>1600422276817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600422276817</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Backup for Intro to Java HW.">
+      <created>1600424833183</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600424833183</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Backup for Intro to Java HW.">
+      <created>1600612694836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600612694837</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Backup for Intro to Java HW." />
+    <option name="LAST_COMMIT_MESSAGE" value="Backup for Intro to Java HW." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Project_Structure" timestamp="1600348469817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600348469817" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1600352628122">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1600612693370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600352628122" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1600352628122">
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600612693370" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1600406993343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600352628122" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1600352628122">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1600406993343" />
+    <state x="549" y="156" key="FileChooserDialogImpl" timestamp="1600406426768">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600352628122" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1600352628122">
+    <state x="549" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600406426768" />
+    <state x="631" y="307" key="Github.ShareDialog" timestamp="1600407055703">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600352628122" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1600348459653">
+    <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1600612758630">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600348459653" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600612758630" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1600612758630">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600612758630" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1600612758630">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600612758630" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1600612758630">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600612758630" />
+    <state width="1493" height="289" key="GridCell.Tab.1.bottom" timestamp="1600424886892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="289" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600424886892" />
+    <state width="1493" height="289" key="GridCell.Tab.1.center" timestamp="1600424886892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="289" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600424886892" />
+    <state width="1493" height="289" key="GridCell.Tab.1.left" timestamp="1600424886892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="289" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600424886892" />
+    <state width="1493" height="289" key="GridCell.Tab.1.right" timestamp="1600424886892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="289" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600424886892" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1600407091888">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600407091888" />
+    <state x="651" y="332" key="VCS.EditChangelistDialog" timestamp="1600408908147">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1600612731267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600612731267" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600409140363">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600409140363" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javahw$Grades.ic" NAME="Grades Coverage Results" MODIFIED="1600350401319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

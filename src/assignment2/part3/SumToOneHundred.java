@@ -1,21 +1,22 @@
 package assignment2.part3;
 
-public class SumToOneHundred {
+public class SumToOneHundred<stopSeccess> {
 
 	public static void main(String[] args) {
 		
 		int sum = 0;
 		int counter = 0;
-		boolean stopSeccess = false;
+		boolean stopSeccess = false;  //To see if stop successfully
 		/* first while loop */
-		for (counter = 0; counter < 100; counter++) {
-			sum += counter;
-			if (sum > 100){
-				stopSeccess = true;
-				break;
+			while (true) {
+				sum += counter;
+				counter++;
+				if (sum > 100) {
+					stopSeccess = true;
+					break;
+				}
 			}
 
-		}
 		if (stopSeccess == false) {
 			System.out.println("stop failed");
 		} else {
@@ -24,9 +25,6 @@ public class SumToOneHundred {
 			// can reach this.
 			System.out.println("Break success! Sum is " + sum);
 		}
-
-		sum = 0;
-		counter = 0;
 		/* second while loop */
 		/* your while loops should look like this:
 		 * while (condition) {
@@ -34,6 +32,8 @@ public class SumToOneHundred {
 		 * 	counter++;
 		 * }
 		 */
+		sum = 0;
+		counter = 0;
 		while(sum <= 100) {
 			sum += counter;
 			counter++;
