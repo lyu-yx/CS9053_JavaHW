@@ -15,10 +15,12 @@ public class Holiday {
 	    this.month = month;
     }
 
+    //If two holidays have the same month
     public static boolean inSameMonth(Holiday firstHoliday, Holiday secondHoliday) {
 	    return firstHoliday.month == secondHoliday.month;
     }
 
+    //Average date in an holidays array
     public static double avgDate(Holiday[] holidays) {
 	    double sum = 0;
 	    int length = holidays.length;
@@ -30,21 +32,21 @@ public class Holiday {
 
 // Setters & Getters
     public String getName() {
-		return this.name;
+		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	public String getMonth() {
-		return this.month;
+		return month;
 	}
 	public void setMonth(String month) {
 		this.month = month;
 	}
 
 	public int getDay() {
-		return this.day;
+		return day;
 	}
 	public void setDay(int day) {
 		this.day = day;
