@@ -7,18 +7,17 @@ public class Bank {
 	public static final int NUM_ACCOUNTS = 5;
     private Account[] accounts = new Account[NUM_ACCOUNTS];
 
+    //constructor
 	public Bank() {
         // create NUM_ACCOUNTS accounts in an array
         // with each account having a starting balance
         // of $1000
-
 	    for (int i = 0; i < NUM_ACCOUNTS; i++) {
 	        accounts[i] = new Account(1000);
         }
 	}
 
 	public Account getAccountById(int id) {
-
 		// this should take an id, search
 		// through the array of accounts until
 		// it finds the account matching the id
@@ -29,7 +28,7 @@ public class Bank {
                 return account;
             }
         }
-        System.out.println("This id doesn't exit.");
+        System.out.println("This id doesn't exist.");
         return null;
 	}
 
@@ -84,7 +83,6 @@ public class Bank {
 				destAccount.deposit(transferAmount);
 			} else {
 				System.out.println("cannot withdraw more money than " + srcAccount.getBalance() + " in this account");
-				continue;
 			}
 		}
 	}

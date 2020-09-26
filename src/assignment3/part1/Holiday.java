@@ -17,7 +17,7 @@ public class Holiday {
 
     //If two holidays have the same month
     public static boolean inSameMonth(Holiday firstHoliday, Holiday secondHoliday) {
-	    return firstHoliday.month == secondHoliday.month;
+	    return firstHoliday.month.equals(secondHoliday.month);
     }
 
     //Average date in an holidays array
@@ -62,7 +62,7 @@ public class Holiday {
 		Holiday[] holidays = new Holiday[2];
 		holidays[0] = new Holiday("Independence Day", 4, "July");
 		holidays[1] = new Holiday("Christmas Day", 25, "December");
-		System.out.println("holidays[0] and holidays[1] are same holiday: " + inSameMonth(holidays[0], holidays[1]));
+		System.out.println("holidays[0] and holidays[1] are same holiday: " + Holiday.inSameMonth(holidays[0], holidays[1]));
 		System.out.println("The average date of holidays is: " + avgDate(holidays));
 		System.out.println(holidays[0].toString());
 	}

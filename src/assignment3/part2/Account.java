@@ -8,8 +8,7 @@ public class Account {
 
     //Constructors
     public Account() {
-        accountCount++;
-        id = accountCount;
+        id = ++accountCount;
     }
     public Account(double startingBalance) {
         this();
