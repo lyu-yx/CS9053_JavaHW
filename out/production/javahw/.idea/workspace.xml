@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assignment3/part1/Ellipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment3/part1/Holiday.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment3/part2/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment3/part2/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,13 +57,13 @@
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Holiday">
-    <configuration name="CopyReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment2.part4.CopyReverse" />
+  <component name="RunManager" selected="Application.Bank">
+    <configuration name="Bank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment3.part2.Bank" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment2.part4.*" />
+          <option name="PATTERN" value="assignment3.part2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,8 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayInRows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment2.part4.DisplayInRows" />
+    <configuration name="CopyReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment2.part4.CopyReverse" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
@@ -131,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bank" />
         <item itemvalue="Application.Holiday" />
         <item itemvalue="Application.EllipseTest" />
         <item itemvalue="Application.TwoDimensionalArray" />
         <item itemvalue="Application.CopyReverse" />
-        <item itemvalue="Application.DisplayInRows" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +148,7 @@
       <workItem from="1600612561262" duration="194000" />
       <workItem from="1600735108289" duration="2731000" />
       <workItem from="1600989751385" duration="3777000" />
-      <workItem from="1601086701016" duration="1556000" />
+      <workItem from="1601086701016" duration="8156000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -205,7 +199,28 @@
       <option name="project" value="LOCAL" />
       <updated>1600737401714</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Backup for Intro to Java HW.">
+      <created>1601088412345</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601088412345</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Backup for Intro to Java HW. WEEK2 class">
+      <created>1601093073417</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601093073417</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Backup for Intro to Java HW. WEEK2 class">
+      <created>1601094206230</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601094206230</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,17 +264,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Backup for Intro to Java HW." />
-    <option name="LAST_COMMIT_MESSAGE" value="Backup for Intro to Java HW." />
+    <MESSAGE value="Backup for Intro to Java HW. WEEK2 class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backup for Intro to Java HW. WEEK2 class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Project_Structure" timestamp="1600348469817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600348469817" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1600737400038">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1601094204930">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600737400038" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601094204930" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1600406993343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -272,38 +288,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1600992010575">
+    <state width="1493" height="289" key="GridCell.Tab.0.bottom" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600992010575" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1600992010575">
+    <state width="1493" height="289" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
+    <state width="1493" height="289" key="GridCell.Tab.0.center" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600992010575" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1600992010575">
+    <state width="1493" height="289" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
+    <state width="1493" height="289" key="GridCell.Tab.0.left" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600992010575" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1600992010575">
+    <state width="1493" height="289" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
+    <state width="1493" height="289" key="GridCell.Tab.0.right" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600992010575" />
-    <state width="1493" height="289" key="GridCell.Tab.1.bottom" timestamp="1600991534823">
+    <state width="1493" height="289" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
+    <state width="1493" height="289" key="GridCell.Tab.1.bottom" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600991534823" />
-    <state width="1493" height="289" key="GridCell.Tab.1.center" timestamp="1600991534823">
+    <state width="1493" height="289" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
+    <state width="1493" height="289" key="GridCell.Tab.1.center" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600991534823" />
-    <state width="1493" height="289" key="GridCell.Tab.1.left" timestamp="1600991534823">
+    <state width="1493" height="289" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
+    <state width="1493" height="289" key="GridCell.Tab.1.left" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600991534823" />
-    <state width="1493" height="289" key="GridCell.Tab.1.right" timestamp="1600991534823">
+    <state width="1493" height="289" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
+    <state width="1493" height="289" key="GridCell.Tab.1.right" timestamp="1601094866187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600991534823" />
+    <state width="1493" height="289" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601094866187" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1600407091888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -312,14 +328,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1600737411116">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1601094214512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600737411116" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600409140363">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601094214512" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601088340024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600409140363" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601088340024" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javahw$Grades.ic" NAME="Grades Coverage Results" MODIFIED="1600350401319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

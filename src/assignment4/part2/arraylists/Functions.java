@@ -1,0 +1,69 @@
+package assignment4.part2.arraylists;
+
+import assignment4.part1.fruit.Apple;
+import assignment4.part1.fruit.Fruit;
+import assignment4.part1.fruit.Lemon;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Functions {
+    public static double avarLemonSourness(List<Fruit> list) {
+        int sum = 0;
+        int lemonCnt = 0;
+        double avarLemonSournessResult = -1;
+        for (Fruit fruit : list) {
+            if (fruit instanceof Lemon) {
+                Lemon tempLemon = (Lemon)fruit;
+                sum += tempLemon.getSourness();
+                lemonCnt++;
+            }
+        }
+        avarLemonSournessResult = sum / lemonCnt;
+        return avarLemonSournessResult;
+    }
+
+    public static Apple findFirstRottenGreenApple(List<Fruit> list) {
+        Apple firstRottenGreenApple = null;
+        for (Fruit fruit : list) {
+            if (fruit instanceof Apple) {
+                Apple tempApple = (Apple) fruit;
+                if (tempApple.isRotten() == true && tempApple.getColor() == "green") {
+                    firstRottenGreenApple = tempApple;
+                    return firstRottenGreenApple;
+                }
+            }
+        }
+        System.out.println("There is no firstRottenGreenApple in this list");
+        return null;
+    }
+
+    public static void removeTargetIndex(List<Fruit> list, List<Fruit> deleteTargetList) {
+        list.removeAll(deleteTargetList);
+    }
+
+
+
+    public static void removeMatchingObject(List<Fruit> list) {
+        Apple firstRottenGreenApple = Functions.findFirstRottenGreenApple(list);
+        List<Fruit> deleteTargetList = new ArrayList<>();
+        for (Fruit fruit : list) {
+            if (fruit instanceof Apple) {
+                Apple tempApple = (Apple) fruit;
+                if (tempApple == firstRottenGreenApple) {
+                    System.out.println("No." + list.indexOf(fruit) + "  is the same object with retained apple");
+                } else if(tempApple.isRotten() == firstRottenGreenApple.isRotten() &&
+                          tempApple.getColor() == firstRottenGreenApple.getColor() &&
+                          tempApple.getTexture() == firstRottenGreenApple.getTexture() &&
+                          tempApple.getTaste() == firstRottenGreenApple.getTaste()
+                ) {
+                    System.out.println("No." + list.indexOf(fruit) + "  have the same value with retained apple which is:");
+                    System.out.println(tempApple.toString());
+                    deleteTargetList.add(fruit);
+                }
+            }
+        }
+        removeTargetIndex(list, deleteTargetList);
+    }
+
+}
