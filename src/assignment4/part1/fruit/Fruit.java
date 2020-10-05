@@ -1,10 +1,11 @@
 package assignment4.part1.fruit;
 
 public class Fruit {
+
+    static private int next_id;
     private String color;
     private boolean rotten;
     private int id;
-    static private int next_id;
 
     public Fruit() {
         id = next_id;

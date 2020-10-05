@@ -3,6 +3,7 @@ package assignment4.part2.arraylists;
 import assignment4.part1.fruit.Apple;
 import assignment4.part1.fruit.Fruit;
 import assignment4.part1.fruit.Lemon;
+import assignment4.part1.fruit.Orange;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public class Functions {
                 lemonCnt++;
             }
         }
+        System.out.println("sum = " + sum + "   lemonCnt = " + lemonCnt);
         avarLemonSournessResult = sum / lemonCnt;
         return avarLemonSournessResult;
     }
@@ -27,7 +29,7 @@ public class Functions {
         Apple firstRottenGreenApple = null;
         for (Fruit fruit : list) {
             if (fruit instanceof Apple) {
-                Apple tempApple = (Apple) fruit;
+                Apple tempApple = (Apple)fruit;
                 if (tempApple.isRotten() == true && tempApple.getColor() == "green") {
                     firstRottenGreenApple = tempApple;
                     return firstRottenGreenApple;
@@ -42,14 +44,12 @@ public class Functions {
         list.removeAll(deleteTargetList);
     }
 
-
-
     public static void removeMatchingObject(List<Fruit> list) {
         Apple firstRottenGreenApple = Functions.findFirstRottenGreenApple(list);
         List<Fruit> deleteTargetList = new ArrayList<>();
         for (Fruit fruit : list) {
             if (fruit instanceof Apple) {
-                Apple tempApple = (Apple) fruit;
+                Apple tempApple = (Apple)fruit;
                 if (tempApple == firstRottenGreenApple) {
                     System.out.println("No." + list.indexOf(fruit) + "  is the same object with retained apple");
                 } else if(tempApple.isRotten() == firstRottenGreenApple.isRotten() &&
@@ -64,6 +64,20 @@ public class Functions {
             }
         }
         removeTargetIndex(list, deleteTargetList);
+        System.out.println();
+        System.out.println( deleteTargetList.size() + " apple is removed.");
+    }
+
+    public static void printFruitList(List<Fruit> list) {
+        for (Fruit fruit : list) {
+            if (fruit instanceof Apple) {
+                System.out.println(((Apple)fruit).toString());
+            } else if (fruit instanceof Lemon) {
+                System.out.println(((Lemon)fruit).toString());
+            } else {
+                System.out.println(((Orange)fruit).toString());
+            }
+        }
     }
 
 }
