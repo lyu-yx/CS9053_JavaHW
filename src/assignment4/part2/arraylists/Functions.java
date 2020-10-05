@@ -46,6 +46,7 @@ public class Functions {
 
     public static void removeMatchingObject(List<Fruit> list) {
         Apple firstRottenGreenApple = Functions.findFirstRottenGreenApple(list);
+        int length = list.size();
         List<Fruit> deleteTargetList = new ArrayList<>();
         for (Fruit fruit : list) {
             if (fruit instanceof Apple) {
@@ -55,9 +56,9 @@ public class Functions {
                 } else if(tempApple.isRotten() == firstRottenGreenApple.isRotten() &&
                           tempApple.getColor() == firstRottenGreenApple.getColor() &&
                           tempApple.getTexture() == firstRottenGreenApple.getTexture() &&
-                          tempApple.getTaste() == firstRottenGreenApple.getTaste()
-                ) {
-                    System.out.println("No." + list.indexOf(fruit) + "  have the same value with retained apple which is:");
+                          tempApple.getTaste() == firstRottenGreenApple.getTaste())
+                {
+                    System.out.println("No." + tempApple.getId() + "  have the same value with retained apple which is:");
                     System.out.println(tempApple.toString());
                     deleteTargetList.add(fruit);
                 }
@@ -65,7 +66,7 @@ public class Functions {
         }
         removeTargetIndex(list, deleteTargetList);
         System.out.println();
-        System.out.println( deleteTargetList.size() + " apple is removed.");
+        System.out.println( length - list.size() + " apple is removed.");
     }
 
     public static void printFruitList(List<Fruit> list) {

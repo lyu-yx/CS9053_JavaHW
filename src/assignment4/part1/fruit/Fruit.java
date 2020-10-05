@@ -43,11 +43,12 @@ public class Fruit {
     }
 
 
-    public boolean equals(Fruit fruit) {
-        if (fruit.getColor() == color && fruit.isRotten() == rotten)
-            return true;
-        else
-            return false;
+    public boolean equals(Object object) {
+        if (object instanceof Fruit) {
+            if ((((Fruit)object).getColor()) == color && ((Fruit)object).isRotten() == rotten)
+                return true;
+        }
+        return false;
     }
 
 }

@@ -8,10 +8,8 @@ public class Lemon extends Citris {
         super.setColor("Yellow");
     }
     public Lemon(int sourness, String taste, boolean rotten) {
-        this();
+        super(taste, "Yellow", rotten);
         this.sourness = sourness;
-        super.setTaste(taste);
-        super.setRotten(rotten);
     }
 
     public int getSourness() {
@@ -26,12 +24,11 @@ public class Lemon extends Citris {
                 getId()+  "  taste:" + getTaste() + "  sourness:" + getSourness();
     }
 
-    public boolean equals(Lemon lemon) {
-        if (lemon.getColor() == super.getColor() &&
-            lemon.isRotten() == super.isRotten() &&
-            lemon.getTaste() == super.getTaste())
-            return true;
-        else
-            return false;
+    public boolean equals(Object object) {
+        if (object instanceof Lemon) {
+            if (super.equals((Citris) object) && (((Lemon)object).getSourness()) == sourness)
+                return true;
+        }
+        return false;
     }
 }

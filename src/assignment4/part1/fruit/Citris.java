@@ -7,9 +7,9 @@ public class Citris extends Fruit{
     }
     public Citris(String taste, String color, boolean rotten) {
         /* this(); */
+        super(color, rotten);
         this.taste = taste;
-        super.setColor(color);
-        super.setRotten(rotten);
+
     }
 
     public String getTaste() {
@@ -25,11 +25,12 @@ public class Citris extends Fruit{
                 getId()+  "  taste:" + getTaste();
     }
 
-    public boolean equals(Citris citris) {
-        if (citris.getColor() == super.getColor() &&
-            citris.isRotten() == super.isRotten())
-            return true;
-        else
-            return false;
+    public boolean equals(Object object) {
+        if (object instanceof Citris) {
+            if (super.equals((Fruit) object) && (((Citris)object).getTaste()) == taste)
+                return true;
+        }
+        return false;
     }
 }
+

@@ -6,19 +6,19 @@ public class Inheritance {
 		Fruit fruit = new Fruit();
 		Citris citris = new Citris();
 		Lemon lemon = new Lemon();
-		Orange orange = new Orange();
+
 		Orange orange1 = new Orange("beautiful", "very good", false);
 		Orange orange2 = new Orange("defaultType", "defaultTaste", false);
-		orange.setRotten(true);
+		Orange orange3 = new Orange("beautiful", "very good", false);
+
+		//orange1.setRotten(true);
 
 		System.out.println(fruit.toString());
 		System.out.println(citris.toString());
 		System.out.println(lemon.toString());
-		System.out.println(orange.toString());
 		System.out.println(orange1.toString());
-		System.out.println(orange.equals(orange1));
-		orange2.setColor("defaultColor");
-		System.out.println(orange2.equals(orange2));
+		System.out.println(orange1.equals(orange3));
+		System.out.println(orange2.equals(orange1));
 	}
 
 }

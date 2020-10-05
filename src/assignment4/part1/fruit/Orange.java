@@ -9,10 +9,8 @@ public class Orange extends Citris{
     }
 
     public Orange(String type, String taste, boolean rotten) {
-        this();
+        super(taste, "Orange", rotten);
         this.type = type;
-        super.setTaste(taste);
-        super.setRotten(rotten);
     }
 
     public String getType() {
@@ -28,13 +26,13 @@ public class Orange extends Citris{
                 getId()+  "  taste:" + getTaste();
     }
 
-    public boolean equals(Orange orange) {
-        if (orange.getColor() == super.getColor() &&
-            orange.isRotten() == super.isRotten() &&
-            orange.getTaste() == super.getTaste())
-            return true;
-        else
-            return false;
-    }
 
+    public boolean equals(Object object) {
+        if (object instanceof Orange) {
+            if (super.equals((Citris) object) && (((Orange)object).getType()) == type)
+                return true;
+        }
+        return false;
+    }
 }
+

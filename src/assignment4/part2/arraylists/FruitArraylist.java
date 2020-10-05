@@ -36,7 +36,7 @@ public class FruitArraylist {
 
         Functions.removeMatchingObject(fruitArrayList);
         System.out.println();
-
+        //print the revised fruitList
         Functions.printFruitList(fruitArrayList);
 	}
 }
