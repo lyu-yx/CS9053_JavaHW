@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/numberfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/part1/ListOfNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/part1/ReadShapeFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/part1/shapes/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/part1/shapes/GeometricObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/part1/shapes/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/part1/shapes/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment5/shapes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment4/part1/fruit/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment4/part1/fruit/Apple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment4/part1/fruit/Citris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment4/part1/fruit/Citris.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment4/part1/fruit/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment4/part1/fruit/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment4/part1/fruit/Inheritance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment4/part1/fruit/Inheritance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment4/part1/fruit/Lemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment4/part1/fruit/Lemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment4/part1/fruit/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment4/part1/fruit/Orange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment4/part2/arraylists/FruitArraylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment4/part2/arraylists/FruitArraylist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +50,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignment4/part2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignment5" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3831522" />
@@ -61,27 +64,14 @@
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment5" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment4\part2" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment4\part1" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment3\part2" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment3\part1" />
-      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FruitArraylist">
-    <configuration name="Bank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment3.part2.Bank" />
-      <module name="javahw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assignment3.part2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ListOfNumbers">
     <configuration name="FruitArraylist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assignment4.part2.arraylists.FruitArraylist" />
       <module name="javahw" />
@@ -95,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Holiday" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment3.part1.Holiday" />
+    <configuration name="GeometricObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment5.part1.shapes.GeometricObject" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment3.part1.*" />
+          <option name="PATTERN" value="assignment5.part1.shapes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +111,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberToEnglish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment2.part3.NumberToEnglish" />
+    <configuration name="ListOfNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment5.part1.ListOfNumbers" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment2.part3.*" />
+          <option name="PATTERN" value="assignment5.part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Square" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment5.part1.shapes.Square" />
+      <module name="javahw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment5.part1.shapes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListOfNumbers" />
+        <item itemvalue="Application.Square" />
+        <item itemvalue="Application.GeometricObject" />
         <item itemvalue="Application.FruitArraylist" />
         <item itemvalue="Application.Inheritance" />
-        <item itemvalue="Application.NumberToEnglish" />
-        <item itemvalue="Application.Bank" />
-        <item itemvalue="Application.Holiday" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +165,10 @@
       <workItem from="1601086701016" duration="8156000" />
       <workItem from="1601523214953" duration="16965000" />
       <workItem from="1601867153732" duration="10156000" />
-      <workItem from="1601904531523" duration="1341000" />
+      <workItem from="1601904531523" duration="5797000" />
+      <workItem from="1602199565465" duration="107000" />
+      <workItem from="1602199707316" duration="879000" />
+      <workItem from="1602419431153" duration="1334000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -248,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601883869237</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="revised">
+      <created>1601910038489</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601910038489</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,17 +307,22 @@
     <MESSAGE value="Backup for Intro to Java HW." />
     <MESSAGE value="Backup for Intro to Java HW. WEEK2 class" />
     <MESSAGE value="revised part2.d. But still have problems in equals()" />
-    <option name="LAST_COMMIT_MESSAGE" value="revised part2.d. But still have problems in equals()" />
+    <MESSAGE value="revised" />
+    <option name="LAST_COMMIT_MESSAGE" value="revised" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Project_Structure" timestamp="1600348469817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600348469817" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1601883867337">
+    <state x="449" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602199642886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601883867337" />
+    <state x="449" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1602199642886" />
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1601910036497">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601910036497" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1600406993343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -317,38 +335,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1493" height="324" key="GridCell.Tab.0.bottom" timestamp="1601900604765">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601900604765" />
-    <state width="1493" height="324" key="GridCell.Tab.0.center" timestamp="1601900604764">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601900604764" />
-    <state width="1493" height="324" key="GridCell.Tab.0.left" timestamp="1601900604764">
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601900604764" />
-    <state width="1493" height="324" key="GridCell.Tab.0.right" timestamp="1601900604764">
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601900604764" />
-    <state width="1493" height="324" key="GridCell.Tab.1.bottom" timestamp="1601900604765">
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
+    <state width="1493" height="211" key="GridCell.Tab.1.bottom" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601900604765" />
-    <state width="1493" height="324" key="GridCell.Tab.1.center" timestamp="1601900604765">
+    <state width="1493" height="211" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
+    <state width="1493" height="211" key="GridCell.Tab.1.center" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601900604765" />
-    <state width="1493" height="324" key="GridCell.Tab.1.left" timestamp="1601900604765">
+    <state width="1493" height="211" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
+    <state width="1493" height="211" key="GridCell.Tab.1.left" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601900604765" />
-    <state width="1493" height="324" key="GridCell.Tab.1.right" timestamp="1601900604765">
+    <state width="1493" height="211" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
+    <state width="1493" height="211" key="GridCell.Tab.1.right" timestamp="1601910337801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601900604765" />
+    <state width="1493" height="211" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601910337801" />
     <state x="478" y="103" key="SettingsEditor" timestamp="1601525027377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,10 +375,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1601900092708">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1601910046999">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601900092708" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601910046999" />
     <state x="541" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601543871126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
