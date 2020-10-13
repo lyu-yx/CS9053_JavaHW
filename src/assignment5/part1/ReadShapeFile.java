@@ -49,7 +49,7 @@ public class ReadShapeFile {
 
         while (true) {
             try {
-                if (!((inString = input.readLine()) != null)) break;
+                if (((inString = input.readLine()) == null)) break;
                 try {
                     /* create a loop to read the file line-by-line */
                     GeometricObject shape = createShape(inString);
