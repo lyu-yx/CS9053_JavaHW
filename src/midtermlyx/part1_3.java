@@ -21,16 +21,24 @@ class  part1_3 {
             e.printStackTrace();
         }
         while (inLine!= null) {
-        String[] numbers = inLine.split(" ");
-        Integer a = Integer.parseInt(numbers[0]);
-        Integer b = Integer.parseInt(numbers[1]);
-        Integer c = a/b;
-        System.out.println("result = " + c);
             try {
-                inLine = fileInput.readLine();
-            } catch (IOException e) {
+                String[] numbers = inLine.split(" ");
+                Integer a = Integer.parseInt(numbers[0]);
+                Integer b = Integer.parseInt(numbers[1]);
+                Integer c = a / b;
+                System.out.println("result = " + c);
+            } catch (ArithmeticException e) {
+                e.printStackTrace();
+            } catch (ArrayIndexOutOfBoundsException e) {
+                e.printStackTrace();
+            } catch (NumberFormatException e) {
                 e.printStackTrace();
             }
-        }
+                try {
+                    inLine = fileInput.readLine();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
     }
 }

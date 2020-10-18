@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/ExceptionWrongMatrixDimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/ExceptionWrongMatrixValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/dependency/m1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/dependency/m2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/dependency/matrixinput1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/dependency/matrixinput2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/dependency/result" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/dependency/wrongcolumns" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/dependency/wrongrows" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/BobSledder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/CrossCountrySkier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/Curler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/FigureSkater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/IceSkater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/Luger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/MogulSkier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/Skier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/Sledder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/SpeedSkater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/Testing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/edu/nyu/cs9053/midterm/hierarchy/WinterSportPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/part1_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midtermlyx/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/midtermlyx/ExceptionWrongMatrixDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midtermlyx/ExceptionWrongMatrixDimension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/midtermlyx/ExceptionWrongMatrixValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midtermlyx/ExceptionWrongMatrixValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/midtermlyx/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midtermlyx/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/midtermlyx/part1_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midtermlyx/part1_3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,19 +71,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Matrix">
-    <configuration name="ListOfNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment5.part1.ListOfNumbers" />
-      <module name="javahw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assignment5.part1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="midtermlyx.Matrix" />
       <module name="javahw" />
@@ -140,6 +110,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="part1_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="midtermlyx.part1_3" />
+      <module name="javahw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="midtermlyx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="midtermlyx.test" />
       <module name="javahw" />
@@ -156,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Matrix" />
+        <item itemvalue="Application.part1_3" />
         <item itemvalue="Application.Testing" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.ReadShapeFile" />
-        <item itemvalue="Application.ListOfNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +171,10 @@
       <workItem from="1602428480767" duration="419000" />
       <workItem from="1602589164421" duration="1234000" />
       <workItem from="1602811561820" duration="1365000" />
-      <workItem from="1602820687612" duration="19970000" />
+      <workItem from="1602820687612" duration="25014000" />
+      <workItem from="1602862737228" duration="627000" />
+      <workItem from="1602892408968" duration="5203000" />
+      <workItem from="1603021374812" duration="2155000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -302,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602589718499</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="midterm 1th edition">
+      <created>1602862367045</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602862367045</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,17 +344,18 @@
     <MESSAGE value="revised part2.d. But still have problems in equals()" />
     <MESSAGE value="revised" />
     <MESSAGE value="I/O exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="I/O exceptions" />
+    <MESSAGE value="midterm 1th edition" />
+    <option name="LAST_COMMIT_MESSAGE" value="midterm 1th edition" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Project_Structure" timestamp="1600348469817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600348469817" />
-    <state x="524" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602857734118">
+    <state x="524" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602858291699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602857734118" />
+    <state x="524" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602858291699" />
     <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1602840576398">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -374,10 +368,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="534" y="278" width="516" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1602839095612" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1602589716938">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1602862363647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602589716938" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602862363647" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1600406993343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -390,38 +384,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="826" height="177" key="GridCell.Tab.0.bottom" timestamp="1602857680646">
+    <state width="818" height="271" key="GridCell.Tab.0.bottom" timestamp="1602898581230">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="177" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602857680646" />
-    <state width="826" height="177" key="GridCell.Tab.0.center" timestamp="1602857680646">
+    <state width="818" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602898581230" />
+    <state width="818" height="271" key="GridCell.Tab.0.center" timestamp="1602898581229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="177" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602857680646" />
-    <state width="826" height="177" key="GridCell.Tab.0.left" timestamp="1602857680646">
+    <state width="818" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602898581229" />
+    <state width="818" height="271" key="GridCell.Tab.0.left" timestamp="1602898581229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="177" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602857680646" />
-    <state width="826" height="177" key="GridCell.Tab.0.right" timestamp="1602857680646">
+    <state width="818" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602898581229" />
+    <state width="818" height="271" key="GridCell.Tab.0.right" timestamp="1602898581229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="177" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602857680646" />
-    <state width="1212" height="211" key="GridCell.Tab.1.bottom" timestamp="1602855534763">
+    <state width="818" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602898581229" />
+    <state width="1205" height="192" key="GridCell.Tab.1.bottom" timestamp="1602895147167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1212" height="211" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602855534763" />
-    <state width="1212" height="211" key="GridCell.Tab.1.center" timestamp="1602855534763">
+    <state width="1205" height="192" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602895147167" />
+    <state width="1205" height="192" key="GridCell.Tab.1.center" timestamp="1602895147167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1212" height="211" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602855534763" />
-    <state width="1212" height="211" key="GridCell.Tab.1.left" timestamp="1602855534762">
+    <state width="1205" height="192" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602895147167" />
+    <state width="1205" height="192" key="GridCell.Tab.1.left" timestamp="1602895147167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1212" height="211" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602855534762" />
-    <state width="1212" height="211" key="GridCell.Tab.1.right" timestamp="1602855534763">
+    <state width="1205" height="192" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602895147167" />
+    <state width="1205" height="192" key="GridCell.Tab.1.right" timestamp="1602895147167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1212" height="211" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602855534763" />
+    <state width="1205" height="192" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602895147167" />
     <state x="478" y="103" key="SettingsEditor" timestamp="1601525027377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -430,10 +424,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1602589724600">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1602862762604">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602589724600" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602862762604" />
     <state x="541" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602589702419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

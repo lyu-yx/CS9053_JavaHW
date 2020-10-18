@@ -61,24 +61,26 @@ public class Matrix {
 			int row = Integer.parseInt(ln.split(" ")[0]);
 			int column = Integer.parseInt(ln.split(" ")[1]);
 			int columnCnt = 0;
-
-			while (ln != null) {
+			System.out.println(ln);
+			while ( (ln = in.readLine()) != null) {
 				System.out.println(ln);
-				ln = in.readLine();
-				if (ln.split(" ").length != column) {
-					throw new ExceptionWrongMatrixValues();
+				if (ln.split(" ").length != column && columnCnt > 0) {
+					throw new ExceptionWrongMatrixDimension();
 				}
 
 				columnCnt++;
 
 			}
 			if (columnCnt != row) {
-				throw new ExceptionWrongMatrixValues();
+				throw new ExceptionWrongMatrixDimension();
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (NumberFormatException e) {
+			System.err.println("Caught NumberFormatException: " + e.getMessage());
+			throw new ExceptionWrongMatrixValues();
 		}
 
 
@@ -164,7 +166,6 @@ public class Matrix {
 		} catch (ExceptionWrongMatrixDimension e1) {
 			System.err.println("wrong dimensions: " + e1);
 		} catch (ExceptionWrongMatrixValues e2) {
-
 			System.err.println("wrong matrix values: " + e2);
 		}
 
@@ -183,8 +184,3 @@ public class Matrix {
 	}
 	
 }
-/*todolist
-1 把read的bug改了
-2 两个exceptions
-
-*/
