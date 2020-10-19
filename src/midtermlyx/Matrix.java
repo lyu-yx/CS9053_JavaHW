@@ -54,40 +54,57 @@ public class Matrix {
 	
 	public static Matrix read(String filename) throws ExceptionWrongMatrixValues, ExceptionWrongMatrixDimension {
 		ArrayList<String> readList = new ArrayList<>();
+		Matrix matrix = null;
 		try {
 			FileReader f = new FileReader(filename);
 			BufferedReader in = new BufferedReader(f);
 			String ln = in.readLine();
 			int row = Integer.parseInt(ln.split(" ")[0]);
 			int column = Integer.parseInt(ln.split(" ")[1]);
-			int columnCnt = 0;
+			matrix = new Matrix(row, column);
+			System.out.println("row,col:  "+ row+"  "+ column);
+			int rowCnt = 0;
 			System.out.println(ln);
 			while ( (ln = in.readLine()) != null) {
 				System.out.println(ln);
-				if (ln.split(" ").length != column && columnCnt > 0) {
+				for (int i = 0; i < row; i++) {
+					String rowValue[] = ln.split(" ");
+					for (int j = 0; j < column; j++) {
+						try {
+							matrix.setElement(i, j, Double.parseDouble(rowValue[j]));
+						} catch (NumberFormatException e) {
+							throw new ExceptionWrongMatrixValues();
+						} catch (ArrayIndexOutOfBoundsException e){
+							throw new ExceptionWrongMatrixValues();
+						}
+					}
+				}
+				if (ln.split(" ").length != column && rowCnt > 0) {
 					throw new ExceptionWrongMatrixDimension();
 				}
-
-				columnCnt++;
-
+				rowCnt++;
 			}
-			if (columnCnt != row) {
+			if (rowCnt != row) {
 				throw new ExceptionWrongMatrixDimension();
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} catch (NumberFormatException e) {
-			System.err.println("Caught NumberFormatException: " + e.getMessage());
-			throw new ExceptionWrongMatrixValues();
 		}
-
-
-		return null;
+		return matrix;
 	}
 	
 	public Matrix sum(Matrix m) {
+		if(mtx[0].length == m.mtx[0].length && mtx.length == m.mtx.length) {
+			Matrix sumResult = new Matrix(mtx.length, mtx[0].length);
+			for (int i = 0; i < mtx.length; i++) {
+				for (int j = 0; j < mtx[0].length; j++) {
+					sumResult.setElement(i, j, getElement(i, j) + m.getElement(i, j));
+				}
+			}
+			return sumResult;
+		}
 		return null;
 	}
 	
@@ -147,12 +164,23 @@ public class Matrix {
 		m2.setElement(1, 1, 3.0);
 		m2.setElement(2, 0, 3.0);
 		m2.setElement(2, 1, 3.0);
-		
+
+// sum testing
+		Matrix m4 = new Matrix(3,2);
+		m4.setElement(0, 0, 2.0);
+		m4.setElement(0, 1, 2.0);
+		m4.setElement(1, 0, 2.0);
+		m4.setElement(1, 1, 3.0);
+		m4.setElement(2, 0, 3.0);
+		m4.setElement(2, 1, 3.0);
+
+		Matrix m5 = m2.sum(m1);
+// product testing
 		Matrix result = m1.product(m2);
 		m1.save("m1");
 		m2.save("m2");
 		result.save("result");
-		
+		System.out.println("-----------------try catch for m1, m2 and m3-------------------");
 		try {
 			m1 = Matrix.read("src\\midtermlyx\\dependency\\m1");
 			m2 = Matrix.read("src\\midtermlyx\\dependency\\m2");
@@ -160,7 +188,8 @@ public class Matrix {
 		} catch (Exception e) {
 			System.err.println("error: " + e);
 		}
-		System.out.println("read && save complete");
+		//System.out.println("read && save complete");
+		System.out.println("-----------------try catch for badMatrix-------------------");
 		try {
 			Matrix badMatrix = Matrix.read("src\\midtermlyx\\dependency\\wrongcolumns");
 		} catch (ExceptionWrongMatrixDimension e1) {
@@ -169,7 +198,7 @@ public class Matrix {
 			System.err.println("wrong matrix values: " + e2);
 		}
 
-
+		System.out.println("-----------------try catch for badMatrix2-------------------");
 		try {
 			Matrix badMatrix2 = Matrix.read("src\\midtermlyx\\dependency\\wrongrows");
 		} catch (ExceptionWrongMatrixValues e) {
