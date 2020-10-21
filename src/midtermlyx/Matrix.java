@@ -70,14 +70,14 @@ public class Matrix {
 				for (int i = 0; i < row; i++) {
 					String rowValue[] = ln.split(" ");
 					for (int j = 0; j < column; j++) {
-						if (rowValue.length != column) {
-							throw new ExceptionWrongMatrixValues();
-						}
 						try {
 							matrix.setElement(i, j, Double.parseDouble(rowValue[j]));
 						} catch (NumberFormatException e) {
 							throw new ExceptionWrongMatrixValues();
 						} catch (ArrayIndexOutOfBoundsException e){
+							throw new ExceptionWrongMatrixValues();
+						}
+						if (rowValue.length != column) {
 							throw new ExceptionWrongMatrixValues();
 						}
 					}
