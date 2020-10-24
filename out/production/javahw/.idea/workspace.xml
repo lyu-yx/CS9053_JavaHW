@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment6/PartI/ComplexNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment6/PartI/MaxFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment6/PartI/TestComplexNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment6/PartII/SimpleAddition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment6/PartIII/MathOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment6/PartIII/ResultPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/midtermlyx/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midtermlyx/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,31 +55,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/midtermlyx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignment6/question" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3831522" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.General" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\NYU class\Intro to Java\javahw\src\midtermlyx" />
-      <recent name="D:\NYU class\Intro to Java\javahw\src\midterm" />
-      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment5" />
-      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment4\part2" />
-      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment4\part1" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part2" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment6\question" />
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment6" />
+      <recent name="D:\NYU class\Intro to Java\javahw\src\midtermlyx" />
+      <recent name="D:\NYU class\Intro to Java\javahw\src\midterm" />
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment5" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Matrix">
-    <configuration name="Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="midtermlyx.Matrix" />
+  <component name="RunManager" selected="Application.ResultPrinter">
+    <configuration name="ComplexNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment6.PartI.ComplexNumber" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="midtermlyx.*" />
+          <option name="PATTERN" value="assignment6.PartI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadShapeFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment5.part1.ReadShapeFile" />
+    <configuration name="MaxFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment6.PartI.MaxFinder" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment5.part1.*" />
+          <option name="PATTERN" value="assignment6.PartI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="midtermlyx.edu.nyu.cs9053.midterm.hierarchy.Testing" />
+    <configuration name="ResultPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment6.PartIII.ResultPrinter" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="midtermlyx.*" />
+          <option name="PATTERN" value="assignment6.PartIII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="part1_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="midtermlyx.part1_3" />
+    <configuration name="SimpleAddition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment6.PartII.SimpleAddition" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="midtermlyx.*" />
+          <option name="PATTERN" value="assignment6.PartII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="midtermlyx.test" />
+    <configuration name="TestComplexNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment6.PartI.TestComplexNumber" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="midtermlyx.*" />
+          <option name="PATTERN" value="assignment6.PartI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Matrix" />
-        <item itemvalue="Application.part1_3" />
-        <item itemvalue="Application.Testing" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.ReadShapeFile" />
+        <item itemvalue="Application.ResultPrinter" />
+        <item itemvalue="Application.SimpleAddition" />
+        <item itemvalue="Application.MaxFinder" />
+        <item itemvalue="Application.ComplexNumber" />
+        <item itemvalue="Application.TestComplexNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +180,11 @@
       <workItem from="1603021374812" duration="3779000" />
       <workItem from="1603076261813" duration="686000" />
       <workItem from="1603085038032" duration="6908000" />
-      <workItem from="1603239689756" duration="207000" />
+      <workItem from="1603239689756" duration="697000" />
+      <workItem from="1603373875758" duration="9561000" />
+      <workItem from="1603405426890" duration="49000" />
+      <workItem from="1603405499489" duration="9617000" />
+      <workItem from="1603502862308" duration="3345000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -306,7 +319,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603091552201</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="midterm 4th edition">
+      <created>1603240042680</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603240042680</updated>
+    </task>
+    <task id="LOCAL-00021" summary="midterm 4th edition">
+      <created>1603240293683</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603240293683</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +385,8 @@
     <MESSAGE value="midterm 1th edition" />
     <MESSAGE value="midterm 2th edition" />
     <MESSAGE value="midterm 3th edition" />
-    <option name="LAST_COMMIT_MESSAGE" value="midterm 3th edition" />
+    <MESSAGE value="midterm 4th edition" />
+    <option name="LAST_COMMIT_MESSAGE" value="midterm 4th edition" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Project_Structure" timestamp="1600348469817">
@@ -369,10 +397,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602858291699" />
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1602840576398">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1603407463149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602840576398" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603407463149" />
     <state x="449" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602199642886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -381,10 +409,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="534" y="278" width="516" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1602839095612" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1603091550508">
+    <state x="499" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603374362150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603091550508" />
+    <state x="499" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603374362150" />
+    <state x="499" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603405642682">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603405642682" />
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1603240292385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603240292385" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1600406993343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -397,58 +433,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1200" height="192" key="GridCell.Tab.0.bottom" timestamp="1603093090047">
+    <state width="1198" height="192" key="GridCell.Tab.0.bottom" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603093090047" />
-    <state width="1200" height="192" key="GridCell.Tab.0.center" timestamp="1603093090047">
+    <state width="1198" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state width="1198" height="192" key="GridCell.Tab.0.center" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603093090047" />
-    <state width="1200" height="192" key="GridCell.Tab.0.left" timestamp="1603093090047">
+    <state width="1198" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state width="1198" height="192" key="GridCell.Tab.0.left" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603093090047" />
-    <state width="1200" height="192" key="GridCell.Tab.0.right" timestamp="1603093090047">
+    <state width="1198" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state width="1198" height="192" key="GridCell.Tab.0.right" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603093090047" />
-    <state width="1200" height="192" key="GridCell.Tab.1.bottom" timestamp="1603093090048">
+    <state width="1198" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state width="1198" height="192" key="GridCell.Tab.1.bottom" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603093090048" />
-    <state width="1200" height="192" key="GridCell.Tab.1.center" timestamp="1603093090047">
+    <state width="1198" height="192" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state width="1198" height="192" key="GridCell.Tab.1.center" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603093090047" />
-    <state width="1200" height="192" key="GridCell.Tab.1.left" timestamp="1603093090047">
+    <state width="1198" height="192" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state width="1198" height="192" key="GridCell.Tab.1.left" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603093090047" />
-    <state width="1200" height="192" key="GridCell.Tab.1.right" timestamp="1603093090048">
+    <state width="1198" height="192" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state width="1198" height="192" key="GridCell.Tab.1.right" timestamp="1603469232415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1200" height="192" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603093090048" />
-    <state x="478" y="103" key="SettingsEditor" timestamp="1601525027377">
+    <state width="1198" height="192" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603469232415" />
+    <state x="478" y="103" key="SettingsEditor" timestamp="1603380368793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="103" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601525027377" />
+    <state x="478" y="103" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603380368793" />
     <state x="651" y="332" key="VCS.EditChangelistDialog" timestamp="1600408908147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603091567782">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603240298408">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603091567782" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603240298408" />
     <state x="541" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602589702419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="541" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1602589702419" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1601532058885">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603405706050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601532058885" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603405706050" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601905495588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
