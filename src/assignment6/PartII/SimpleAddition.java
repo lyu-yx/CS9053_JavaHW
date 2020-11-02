@@ -112,6 +112,7 @@ public class SimpleAddition extends JFrame {
          * Hint: the code that initializes the text of sumField can be executed again to update the value to reflect
          * the current value
          */
+        
         addend1Field.addActionListener((e) ->  {
                 //panelForTextFields.add(addend2Field);
                 sumField.setText(Double.toString( Double.parseDouble(addend1Field.getText()) + Double.parseDouble(addend2Field.getText())));});
