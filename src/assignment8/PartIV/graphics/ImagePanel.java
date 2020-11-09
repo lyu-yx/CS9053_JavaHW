@@ -29,7 +29,7 @@ public class ImagePanel extends JPanel {
 		currdicenum = imgNum;
 		imgNum = (int) (Math.random() * 6 + 1);
 		img =  new ImageIcon(stringSet[imgNum - 1]).getImage();
-		System.out.println(imgNum);
+
 
 
     }

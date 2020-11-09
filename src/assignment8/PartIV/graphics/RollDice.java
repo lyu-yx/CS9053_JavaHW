@@ -60,14 +60,29 @@ public class RollDice extends JFrame {
 		class mouseClickListener1 implements MouseListener {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				int diceRollNum = (int)(Math.random() * 10 + 1);
-				for (int i = 0; i < diceRollNum; i++) {
-					imagePanel1.repaint(200);
+
+				int delay = 150;
+				ActionListener taskPerformer = new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						imagePanel1.repaint(200);
+						sum = imagePanel1.imgNum + imagePanel2.currdicenum;
+						sumLabel.setText("Result: " + sum);
+					}
+				};
+				Timer t = new  Timer(delay, taskPerformer);
+				t.start();
+
+				class rollStopListener implements ActionListener {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						t.stop();
+					}
 				}
-				sum = imagePanel1.imgNum + imagePanel2.currdicenum;
-				System.out.println("curr1 = " + imagePanel1.imgNum);
-				System.out.println("curr2 = " + imagePanel2.imgNum);
-				sumLabel.setText("Result: " + sum);
+				int randomTime = (int)(Math.random() * 3000);
+				Timer stop = new Timer(randomTime, new rollStopListener());
+				stop.start();
+
+
 			}
 			@Override
 			public void mousePressed(MouseEvent e) {
@@ -87,12 +102,34 @@ public class RollDice extends JFrame {
 		class mouseClickListener2 implements MouseListener {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				int diceRollNum = (int)(Math.random() * 10 + 1);
-				for (int i = 0; i < diceRollNum; i++) {
-					imagePanel2.repaint(200);
+
+				int delay = 150;
+				ActionListener taskPerformer = new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						sum = imagePanel1.currdicenum + imagePanel2.imgNum;
+						//imagePanel1.repaint(200);
+						imagePanel2.repaint(200);
+						sumLabel.setText("Result: " + sum);
+					}
+				};
+				Timer t = new  Timer(delay, taskPerformer);
+				t.start();
+
+				class rollStopListener implements ActionListener {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						t.stop();
+					}
 				}
-				sum = imagePanel1.currdicenum + imagePanel2.imgNum;
-				sumLabel.setText("Result: " + sum);
+				int randomTime = (int)(Math.random() * 3000);
+				Timer stop = new Timer(randomTime, new rollStopListener());
+				stop.start();
+
+
+
+//				imagePanel2.repaint(200);
+//				sum = imagePanel1.currdicenum + imagePanel2.imgNum;
+//				sumLabel.setText("Result: " + sum);
 			}
 			@Override
 			public void mousePressed(MouseEvent e) {
@@ -139,20 +176,30 @@ public class RollDice extends JFrame {
 			public void actionPerformed(ActionEvent event)
 			{
 
-				int diceRollNum1 = (int)(Math.random() * 10 + 1);
-				int diceRollNum2 = (int)(Math.random() * 10 + 1);
-				for (int i = 0; i < diceRollNum1; i++) {
-					sum = imagePanel1.imgNum + imagePanel2.imgNum;
-					//System.out.println("sum = " + sum);
-					imagePanel1.repaint(200);
+				int delay = 150;
+				ActionListener taskPerformer = new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						sum = imagePanel1.imgNum + imagePanel2.imgNum;
+						imagePanel1.repaint(200);
+						imagePanel2.repaint(200);
+						sumLabel.setText("Result: " + sum);
+					}
+				};
+				Timer t = new  Timer(delay, taskPerformer);
+				t.start();
+
+				class rollStopListener implements ActionListener {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						t.stop();
+					}
 				}
-				for (int i = 0; i < diceRollNum2; i++) {
-					imagePanel2.repaint(200);
-				}
-				sumLabel.setText("Result: " + sum);
+				int randomTime = (int)(Math.random() * 3000);
+				Timer stop = new Timer(randomTime, new rollStopListener());
+				stop.start();
+
 			}
 		}
-
 		ActionListener listener = new AddInterestListener();
 		rollDiceButton.addActionListener(listener);
 		buttonResult.add(rollDiceButton);
