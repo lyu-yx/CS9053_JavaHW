@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartI/RemoveMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartII/MathSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartII/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIII/ReverseMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/die1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/die2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/die3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/die4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/die5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/die6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/graphics/ImagePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment8/PartIV/graphics/RollDice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartI/divisors/CountDivisors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartI/divisors/ThreadedMaxDivisors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartII/queues/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartII/queues/IntegerMiddleMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartII/queues/MiddleMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartII/queues/MonitorQueues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartII/queues/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/PartII/queues/StringMiddleMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment9/data/words" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignment8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignment9" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3831522" />
@@ -65,24 +62,27 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment9" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment8" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment7\part1" />
       <recent name="D:\NYU class\Intro to Java\javahw\src" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment6\question" />
-      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NYU class\Intro to Java\javahw" />
+      <recent name="D:\NYU class\Intro to Java\javahw\src" />
+      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment8" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment7\part1" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReverseMap">
-    <configuration name="BasicTextField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment7.part1.BasicTextField" />
+  <component name="RunManager" selected="Application.CountDivisors">
+    <configuration name="CountDivisors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment9.PartI.divisors.CountDivisors" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment7.part1.*" />
+          <option name="PATTERN" value="assignment9.PartI.divisors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment7.part1.WordFinder" />
+    <configuration name="RollDice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment8.PartIV.graphics.RollDice" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment7.part1.*" />
+          <option name="PATTERN" value="assignment8.PartIV.graphics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountDivisors" />
+        <item itemvalue="Application.RollDice" />
         <item itemvalue="Application.ReverseMap" />
         <item itemvalue="Application.MathSet" />
         <item itemvalue="Application.RemoveMethods" />
-        <item itemvalue="Application.WordFinder" />
-        <item itemvalue="Application.BasicTextField" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +196,10 @@
       <workItem from="1604330570875" duration="49000" />
       <workItem from="1604585334228" duration="6513000" />
       <workItem from="1604623479853" duration="3245000" />
-      <workItem from="1604737914336" duration="2288000" />
+      <workItem from="1604737914336" duration="17563000" />
+      <workItem from="1604935312737" duration="3181000" />
+      <workItem from="1605193620192" duration="125000" />
+      <workItem from="1605225424943" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -359,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604330267410</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="intro to Java assignment 8">
+      <created>1604755814195</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1604755814195</updated>
+    </task>
+    <task id="LOCAL-00025" summary="intro to Java assignment 8 RollDice modified">
+      <created>1604938405956</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1604938405956</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +431,9 @@
     <MESSAGE value="midterm 4th edition" />
     <MESSAGE value="intro to Java assignment 6" />
     <MESSAGE value="intro to Java assignment 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment 7" />
+    <MESSAGE value="intro to Java assignment 8" />
+    <MESSAGE value="intro to Java assignment 8 RollDice modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment 8 RollDice modified" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Project_Structure" timestamp="1600348469817">
@@ -429,10 +448,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602858291699" />
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1604588815438">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1604936527565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604588815438" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604936527565" />
     <state x="449" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602199642886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -453,10 +472,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603405642682" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1604330265050">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1604938403500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604330265050" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604938403500" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1600406993343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -469,38 +488,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1014" height="213" key="GridCell.Tab.0.bottom" timestamp="1604630873730">
+    <state width="1181" height="192" key="GridCell.Tab.0.bottom" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1014" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604630873730" />
-    <state width="1014" height="213" key="GridCell.Tab.0.center" timestamp="1604630873730">
+    <state width="1181" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604938503195" />
+    <state width="1181" height="192" key="GridCell.Tab.0.center" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1014" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604630873730" />
-    <state width="1014" height="213" key="GridCell.Tab.0.left" timestamp="1604630873730">
+    <state width="1181" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604938503195" />
+    <state width="1181" height="192" key="GridCell.Tab.0.left" timestamp="1604938503194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1014" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604630873730" />
-    <state width="1014" height="213" key="GridCell.Tab.0.right" timestamp="1604630873730">
+    <state width="1181" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604938503194" />
+    <state width="1181" height="192" key="GridCell.Tab.0.right" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1014" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604630873730" />
-    <state width="1191" height="192" key="GridCell.Tab.1.bottom" timestamp="1604591877520">
+    <state width="1181" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604938503195" />
+    <state width="1181" height="192" key="GridCell.Tab.1.bottom" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1191" height="192" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604591877520" />
-    <state width="1191" height="192" key="GridCell.Tab.1.center" timestamp="1604591877520">
+    <state width="1181" height="192" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604938503195" />
+    <state width="1181" height="192" key="GridCell.Tab.1.center" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1191" height="192" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604591877520" />
-    <state width="1191" height="192" key="GridCell.Tab.1.left" timestamp="1604591877520">
+    <state width="1181" height="192" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604938503195" />
+    <state width="1181" height="192" key="GridCell.Tab.1.left" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1191" height="192" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604591877520" />
-    <state width="1191" height="192" key="GridCell.Tab.1.right" timestamp="1604591877520">
+    <state width="1181" height="192" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604938503195" />
+    <state width="1181" height="192" key="GridCell.Tab.1.right" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1191" height="192" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604591877520" />
+    <state width="1181" height="192" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604938503195" />
     <state x="478" y="103" key="SettingsEditor" timestamp="1603380368793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -509,10 +528,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1604330308877">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1604938415746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604330308877" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604938415746" />
     <state x="541" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602589702419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -521,10 +540,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="214" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1604330301898" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1603405706050">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1604745913066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603405706050" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604745913066" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604589919839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
