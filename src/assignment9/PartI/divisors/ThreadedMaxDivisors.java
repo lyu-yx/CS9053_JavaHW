@@ -3,72 +3,63 @@ package assignment9.PartI.divisors;
 import java.util.HashSet;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+//
+//My computer has 2 core 4 thread which means
+//if we devided this task into more than 4 thread
+//there should be no significant different.While
+//smaller amount of thread below 4 has impact.
+
 
 public class ThreadedMaxDivisors implements Runnable {
 	
 	private long min;
 	private long max;
 	
-	private static int divisorsNum;
-	private static int maxNum;
+	private  long divisorsNum;
+	private  long maxNum;
 	
-	private static long currValue;
+	//private static long currValue;
 	
 	public ThreadedMaxDivisors(long min, long max) {
 		this.min = min;
 		this.max = max;
-		this.currValue = min;
 	}
-	
-	
+
 	@Override
-	
 	public void run() {
-	
-		int divisors = CountDivisors.countDivisors(currValue);
-		if (divisors >= divisorsNum) {
-			divisorsNum = divisors;
-			maxNum = (int) (currValue);
-		}
-		currValue++;
-	   	//System.out.println(currValue);
-	
+
+		Entry result = CountDivisors.maxDivisors(min, max);
+		divisorsNum = (long)result.getValue();
+		maxNum = (long)(result.getKey());
 
 	}
 	
 
 	public static void main(String[] args) {
 		
-		long min = 5000;
-		long max = 20000;
-		int resultDivisorNum = 0;
-		int resultNum = 0;
+		long min = 100_000;
+		long max = 200_000;
+		long resultDivisorNum = 0;
+		long resultNum = 0;
+		long interval = 1000;
 		Set<Thread> threadSet = new HashSet<Thread>();
 		Set<ThreadedMaxDivisors> divisorsSet = new HashSet<ThreadedMaxDivisors>();
 		long startTime = System.currentTimeMillis();
-		for (long i = min; i < max; i++) {
-			ThreadedMaxDivisors currThread = new ThreadedMaxDivisors(min, max);
-			threadSet.add(new Thread(currThread));
+		ExecutorService executor = Executors.newCachedThreadPool();
+		for (long i = min; i < max; i += interval) {
+			ThreadedMaxDivisors currThread = new ThreadedMaxDivisors(i, i + interval - 1);
 			divisorsSet.add(currThread);
-			//System.out.println(threadSet.size());
-		
+			executor.execute(currThread);
 		}
-		
-		/* join() tells a thread to wait until it's complete before the rest of the code and proceed.
-		 * if we do that for all the threads, then then we can get the results of the threads once
-		 * all of them are done
-		 */
-		for (Thread t: threadSet) {
-			try {
-				t.start();
-				t.join();
-				//System.out.print("Done");
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+
+
+		executor.shutdown();
+
+		while (!executor.isTerminated()) {
 		}
-		
+		System.out.println("done!");
 		// at this point, all threads have been completed, since we
 		// called the "join()" method on all the threads we created,
 		// which forces the code to wait until the thread is finished
@@ -79,10 +70,13 @@ public class ThreadedMaxDivisors implements Runnable {
 			// each ThreadedMaxDivisors run. Pick
 			// the largest number with the largest number of
 			// divisors
-			
+			//System.out.println("inside" + tmd.maxNum + "  =  " + tmd.divisorsNum);
 			if (tmd.divisorsNum >= resultDivisorNum) {
 				resultDivisorNum = tmd.divisorsNum;
 				resultNum = tmd.maxNum;
+				if (tmd.divisorsNum == resultDivisorNum && tmd.maxNum > resultNum) {
+					resultNum = tmd.maxNum;
+				}
 			}
 		}
 		
