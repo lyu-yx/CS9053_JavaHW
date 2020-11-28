@@ -31,8 +31,10 @@ public abstract class MiddleMan implements Runnable {
 					}
 				} // <-- uncomment this after you finish Question 1
 			}
+
+
 			if (outObj != null) {
-				synchronized(in) {
+
 					//System.out.println("outsize:  "+ out.size());
 					/* We have our object which we've removed from the
 					 * input queue. keep checking if the size of the
@@ -55,6 +57,7 @@ public abstract class MiddleMan implements Runnable {
 					 * output object on the queue and set the output
 					 * object to null
 					 */
+			synchronized(out) {
 					if (out.size() >= 10) {
 						continue;
 					} else {
