@@ -1,4 +1,4 @@
-package midtermlyx;
+package midterm;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

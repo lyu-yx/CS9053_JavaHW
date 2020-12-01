@@ -28,7 +28,7 @@ public class ImagePanel extends JPanel {
 		String[] stringSet = {"die1.png","die2.png","die3.png","die6.png","die5.png","die4.png"};
 		currdicenum = imgNum;
 		imgNum = (int) (Math.random() * 6 + 1);
-		img =  new ImageIcon(stringSet[imgNum - 1]).getImage();
+		img =  new ImageIcon("pic/" + stringSet[imgNum - 1]).getImage();
 
 
 

@@ -1,4 +1,4 @@
-package midtermlyx;
+package midterm;
 
 import java.io.*;
 import java.util.ArrayList;

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/sqlite-jdbc-3.30.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment10/JDBCExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment10/JDBCInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javahw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment9/PartII/queues/MiddleMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment9/PartII/queues/MiddleMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/assignment.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/assignment.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,35 +46,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/sqlite-jdbc-3.30.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WEEK12/Lecture12" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3831522" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\NYU class\Intro to Java\javahw\lib" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment10" />
+      <recent name="D:\NYU class\Intro to Java\javahw\lib" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment9\PartI\divisors" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment9" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment8" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NYU class\Intro to Java\javahw\database" />
       <recent name="D:\NYU class\Intro to Java\javahw" />
       <recent name="D:\NYU class\Intro to Java\javahw\src" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment8" />
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment7\part1" />
-      <recent name="D:\NYU class\Intro to Java\javahw\src\assignment2\part2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBCExample">
-    <configuration name="CountDivisors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment9.PartI.divisors.CountDivisors" />
+  <component name="RunManager" selected="Application.RollDice">
+    <configuration name="JDBCExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment10.JDBCExample" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment9.PartI.divisors.*" />
+          <option name="PATTERN" value="assignment10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment10.JDBCExample" />
+    <configuration name="JDBCInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment10.JDBCInterface" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
@@ -140,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RollDice" />
+        <item itemvalue="Application.JDBCInterface" />
         <item itemvalue="Application.JDBCExample" />
         <item itemvalue="Application.MonitorQueues" />
         <item itemvalue="Application.ThreadedMaxDivisors" />
-        <item itemvalue="Application.CountDivisors" />
-        <item itemvalue="Application.RollDice" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +193,9 @@
       <workItem from="1605193620192" duration="125000" />
       <workItem from="1605225424943" duration="10312000" />
       <workItem from="1605412498022" duration="2307000" />
-      <workItem from="1606529040671" duration="291000" />
+      <workItem from="1606529040671" duration="14378000" />
+      <workItem from="1606547139769" duration="1450000" />
+      <workItem from="1606825604319" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -381,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605282919702</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="intro to Java assignment 10 JDBC">
+      <created>1606546109729</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606546109729</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +444,8 @@
     <MESSAGE value="intro to Java assignment 8" />
     <MESSAGE value="intro to Java assignment 8 RollDice modified" />
     <MESSAGE value="intro to Java assignment 9 Threads" />
-    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment 9 Threads" />
+    <MESSAGE value="intro to Java assignment 10 JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment 10 JDBC" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Notifications" timestamp="1605452692156">
@@ -482,38 +488,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603405642682" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1605282917382">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1606546106674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605282917382" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606546106674" />
     <state x="67" y="138" width="1350" height="638" key="DiffContextDialog" timestamp="1605452687923">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="67" y="138" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1605452687923" />
-    <state x="549" y="156" key="FileChooserDialogImpl" timestamp="1606529335841">
+    <state x="549" y="156" key="FileChooserDialogImpl" timestamp="1606533940761">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606529335841" />
+    <state x="549" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606533940761" />
     <state x="631" y="307" key="Github.ShareDialog" timestamp="1600407055703">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1493" height="236" key="GridCell.Tab.0.bottom" timestamp="1605453609123">
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1606546961268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605453609123" />
-    <state width="1493" height="236" key="GridCell.Tab.0.center" timestamp="1605453609123">
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606546961268" />
+    <state width="1493" height="209" key="GridCell.Tab.0.center" timestamp="1606546961268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605453609123" />
-    <state width="1493" height="236" key="GridCell.Tab.0.left" timestamp="1605453609123">
+    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606546961268" />
+    <state width="1493" height="209" key="GridCell.Tab.0.left" timestamp="1606546961268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605453609123" />
-    <state width="1493" height="236" key="GridCell.Tab.0.right" timestamp="1605453609123">
+    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606546961268" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right" timestamp="1606546961268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605453609123" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606546961268" />
     <state width="1181" height="192" key="GridCell.Tab.1.bottom" timestamp="1604938503195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -534,10 +540,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="128" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1605452712378" />
-    <state x="367" y="0" key="SettingsEditor" timestamp="1606529337755">
+    <state x="544" y="38" key="SettingsEditor" timestamp="1606536006878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="367" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606529337755" />
+    <state x="544" y="38" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606536006878" />
     <state x="536" y="130" key="VCS.ChangeListViewerDialog" timestamp="1605452577594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -546,10 +552,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1605282931531">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1606546120851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605282931531" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606546120851" />
     <state x="541" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605452695633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

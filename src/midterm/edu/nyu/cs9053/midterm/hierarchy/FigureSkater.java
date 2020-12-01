@@ -1,4 +1,4 @@
-package midtermlyx.edu.nyu.cs9053.midterm.hierarchy;
+package midterm.edu.nyu.cs9053.midterm.hierarchy;
 
 import java.util.Objects;
 

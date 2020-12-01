@@ -51,8 +51,8 @@ public class RollDice extends JFrame {
 
 	public JPanel createResult() {
 		JPanel resultPanel = new JPanel();
-		imagePanel1 = new ImagePanel("die1.png");
-		imagePanel2 = new ImagePanel("die1.png");
+		imagePanel1 = new ImagePanel("pic/die1.png");
+		imagePanel2 = new ImagePanel("pic/die1.png");
 		resultPanel.add(imagePanel1);
 		resultPanel.add(imagePanel2);
 

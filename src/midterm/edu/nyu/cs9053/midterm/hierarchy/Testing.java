@@ -1,4 +1,4 @@
-package midtermlyx.edu.nyu.cs9053.midterm.hierarchy;
+package midterm.edu.nyu.cs9053.midterm.hierarchy;
 
 public class Testing {
     public static void main(String[] args) {

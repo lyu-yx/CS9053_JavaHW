@@ -1,4 +1,4 @@
-package midtermlyx;
+package midterm;
 
 public class ExceptionWrongMatrixDimension extends Exception {
     public  ExceptionWrongMatrixDimension() {
