@@ -12,7 +12,6 @@ public class ImagePanel extends JPanel {
 	private List<Integer> imageSequence;
 	
 	public ImagePanel() {
-
 		for (int i=0;i<6;i++) {
 			diceImages[i] = new ImageIcon("pic/" + "die"+(i+1) +".png").getImage();
 		}
@@ -41,7 +40,7 @@ public class ImagePanel extends JPanel {
 	}
 	
 	public void setImage(String img) {
-		this.img = new ImageIcon(img).getImage();
+		this.img = new ImageIcon("pic/" + img +".png").getImage();
 		repaint();
 	}
 	
@@ -72,6 +71,28 @@ public class ImagePanel extends JPanel {
 	
     public void paintComponent(Graphics g) {
     	super.paintComponent(g);
-    	l.repaint();
+//    	l.repaint();
     }
+
+    public static JPanel createDicePanel() {
+		JPanel dicePanel = new JPanel();
+		ImagePanel dice1, dice2, dice3, dice4, dice5;
+		dice1 = new ImagePanel("pic/die1.png");
+		dice2 = new ImagePanel("pic/die1.png");
+		dice3 = new ImagePanel("pic/die1.png");
+		dice4 = new ImagePanel("pic/die1.png");
+		dice5 = new ImagePanel("pic/die1.png");
+
+		dicePanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+
+		dicePanel.add(dice1);
+		dicePanel.add(dice2);
+		dicePanel.add(dice3);
+		dicePanel.add(dice4);
+		dicePanel.add(dice5);
+
+		return dicePanel;
+	}
+
+
 }
