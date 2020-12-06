@@ -12,6 +12,7 @@ public class YahtzeeFrame extends JFrame {
 		setSize(450,1040);
 		JPanel scorePanel = new JPanel(new GridLayout(2,1));
 		JPanel lowerPanel = new JPanel(new FlowLayout());
+		JPanel imagePanel = new ImagePanel();
 		JPanel dicePanel = ImagePanel.createDicePanel();
 		JPanel wholePanel = new JPanel(new BorderLayout());
 

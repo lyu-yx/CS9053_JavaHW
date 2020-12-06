@@ -2,6 +2,7 @@ package finalproject.game;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ public class ImagePanel extends JPanel {
 	private JLabel l;
 	private Image[] diceImages = new Image[6];
 	private List<Integer> imageSequence;
-
+	private int currDiceNum;
 
 
 
@@ -25,8 +26,12 @@ public class ImagePanel extends JPanel {
 
 	}
 	
-	public ImagePanel(String img) {		
+	public ImagePanel(String img) {
 		this(new ImageIcon(img).getImage());
+		for (int i=0;i<6;i++) {
+			diceImages[i] = new ImageIcon("pic/" + "die"+(i+1) +".png").getImage();
+		}
+
 	}
 	
 	public ImagePanel(Image img) {
@@ -77,8 +82,15 @@ public class ImagePanel extends JPanel {
 	
     public void paintComponent(Graphics g) {
     	super.paintComponent(g);
-//    	l.repaint();
+    	l.repaint();
     }
+
+    public int getCurrDiceNum() {
+		return currDiceNum;
+	}
+	public void setCurrDiceNum() {
+		currDiceNum = (int)(Math.random() * 6);
+	}
 
     public static JPanel createDicePanel() {
 		JPanel dicePanel = new JPanel(new GridLayout(6,1,20,20));
@@ -87,7 +99,7 @@ public class ImagePanel extends JPanel {
 		ImagePanel dice1, dice2, dice3, dice4, dice5;
 		JButton rollButton;
 		JCheckBox dice1CheckBox, dice2CheckBox, dice3CheckBox, dice4CheckBox, dice5CheckBox;
-
+		List<ImagePanel> imagePanelList = new ArrayList<>();
 
 
 
@@ -97,6 +109,15 @@ public class ImagePanel extends JPanel {
 		dice4 = new ImagePanel("pic/die4.png");
 		dice5 = new ImagePanel("pic/die5.png");
 
+
+
+		imagePanelList.add(dice1);
+		imagePanelList.add(dice2);
+		imagePanelList.add(dice3);
+		imagePanelList.add(dice4);
+		imagePanelList.add(dice5);
+
+		//dice1.setImage(dice1.diceImages[2]);
 		//***********************create 5 ImagePanel******************************************
 		dice1CheckBox = new JCheckBox("keep");
 		dice1CheckBox.addActionListener(listener);
@@ -155,6 +176,7 @@ public class ImagePanel extends JPanel {
 		rollLabel = new JLabel("Roll: 0");
 		rollButton = new JButton("Roll");
 
+
 		rollButton.setAlignmentX((float)0.5);
 		rollLabel.setAlignmentX((float)0.5);
 		turnLabel.setAlignmentX((float)0.5);
@@ -163,8 +185,50 @@ public class ImagePanel extends JPanel {
 		diceControlPanel.add(rollLabel);
 		diceControlPanel.add(rollButton);
 
+//**********************RoLLButtonListener******************
+		class RollButtonListener implements ActionListener
+		{
+//			public void actionPerformed(ActionEvent event)
+//			{
+//				int delay = 150;
+//				ActionListener taskPerformer = new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						dice1.setCurrDiceNum();
+						dice1.setImage(dice1.diceImages[dice1.getCurrDiceNum()]);
+						System.out.println(dice1.getCurrDiceNum());
+						for (ImagePanel imagePanel : imagePanelList) {
+							imagePanel.setCurrDiceNum();
+							imagePanel.setImage(imagePanel.diceImages[imagePanel.getCurrDiceNum()]);
+							//imagePanel.repaint();
+							//System.out.println("dicenum" + currDiceNum + "    panelnum:" + count);
+							//imagePanel.repaint();
+							//dicePart1Panel.repaint(200);
+
+						}
+
+					}
+				}
+//				Timer t = new Timer(delay, taskPerformer);
+//				t.start();
+//
+//				class rollStopListener implements ActionListener {
+//					@Override
+//					public void actionPerformed(ActionEvent e) {
+//						t.stop();
+//					}
+//				}
+//				int randomTime = (int)(Math.random() * 3000);
+//				Timer stop = new Timer(randomTime, new rollStopListener());
+//				stop.start();
+//
+//			}
+//		}
+
+		rollButton.addActionListener(new RollButtonListener());
 
 
+
+//**********************add components to ImagePanel******************
 		dicePanel.add(dicePart1Panel);
 		dicePanel.add(dicePart2Panel);
 		dicePanel.add(dicePart3Panel);
