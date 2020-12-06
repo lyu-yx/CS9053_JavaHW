@@ -2,6 +2,139 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="" />
+    <list id="b3a0d35b-d23d-4c84-a699-e8fafccbe013" name="intro to Java assignment final 12.3" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment10/JDBCExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment10/JDBCInterface$QueryButtonListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment10/JDBCInterface$insertButtonListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment10/JDBCInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment3/part1/Ellipse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment3/part1/Holiday.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment3/part2/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment3/part2/Bank.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part1/fruit/Apple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part1/fruit/Citris.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part1/fruit/Fruit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part1/fruit/Inheritance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part1/fruit/Lemon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part1/fruit/Orange.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part2/arraylists/FruitArraylist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment4/part2/arraylists/Functions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/numberfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/outFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/part1/ListOfNumbers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/part1/ReadShapeFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/part1/ShapeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/part1/shapes/Circle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/part1/shapes/GeometricObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/part1/shapes/Rectangle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/part1/shapes/Square.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment5/shapes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment6/PartI/ComplexNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment6/PartI/MaxFinder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment6/PartI/TestComplexNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment6/PartII/SimpleAddition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment6/PartIII/MathOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment6/PartIII/ResultPrinter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/WordFinder$1AddInterestListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/WordFinder$1MenuItemListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/WordFinder$1OpenActionListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/WordFinder$OpenFileListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/WordFinder$TypingListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/WordFinder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/WordList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/words" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment7/part1/words100" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartI/RemoveMethods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartII/MathSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartII/Pair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIII/ReverseMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/ImagePanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1AddInterestListener$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1AddInterestListener$1rollStopListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1AddInterestListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1mouseClickListener1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1mouseClickListener1$1rollStopListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1mouseClickListener1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1mouseClickListener2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1mouseClickListener2$1rollStopListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice$1mouseClickListener2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment8/PartIV/graphics/RollDice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartI/divisors/CountDivisors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartI/divisors/ThreadedMaxDivisors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartII/queues/Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartII/queues/IntegerMiddleMan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartII/queues/MiddleMan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartII/queues/MonitorQueues.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartII/queues/Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/PartII/queues/StringMiddleMan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/assignment9/data/words" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/database/assignment.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/database/javaclass.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/finalproject/game/ImagePanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/finalproject/game/LowerSectionPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/finalproject/game/UpperSectionPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/finalproject/game/YahtzeeFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/finalproject/server/SaveServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/lib/sqlite-jdbc-3.30.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/ExceptionWrongMatrixDimension.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/ExceptionWrongMatrixValues.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/Matrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/dependency/m1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/dependency/m2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/dependency/matrixinput1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/dependency/matrixinput2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/dependency/result" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/dependency/wrongcolumns" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/dependency/wrongrows" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/BobSledder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/CrossCountrySkier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/Curler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/FigureSkater.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/IceSkater.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/Luger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/MogulSkier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/Skier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/Sledder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/SpeedSkater.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/Testing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/edu/nyu/cs9053/midterm/hierarchy/WinterSportPlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/part1_3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/save/m1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/save/m2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/save/result" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/midterm/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/pic/die1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/pic/die2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/pic/die3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/pic/die4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/pic/die5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/pic/die6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/assignment5/numberfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/assignment5/outFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/assignment5/shapes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/assignment7/part1/words" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/assignment7/part1/words100" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/assignment9/data/words" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/dependency/m1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/dependency/m2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/dependency/matrixinput1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/dependency/matrixinput2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/dependency/result" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/dependency/wrongcolumns" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/dependency/wrongrows" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/save/m1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/save/m2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/javahw/src/midterm/save/result" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/midterm/save/m1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/midterm/save/m2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/midterm/save/result" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,6 +295,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="" />
+      <changelist id="b3a0d35b-d23d-4c84-a699-e8fafccbe013" name="intro to Java assignment final 12.3" comment="" />
       <created>1600348390604</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -208,6 +342,8 @@
       <workItem from="1606529040671" duration="14378000" />
       <workItem from="1606547139769" duration="1450000" />
       <workItem from="1606825604319" duration="7853000" />
+      <workItem from="1607000695301" duration="5959000" />
+      <workItem from="1607006763564" duration="282000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -405,7 +541,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606833509961</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="intro to Java assignment final 12.3">
+      <created>1607006212020</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1607006212020</updated>
+    </task>
+    <task id="LOCAL-00030" summary="intro to Java assignment final 12.3">
+      <created>1607006414613</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1607006414613</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,6 +589,13 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
@@ -465,13 +622,14 @@
     <MESSAGE value="intro to Java assignment 9 Threads" />
     <MESSAGE value="intro to Java assignment 10 JDBC" />
     <MESSAGE value="intro to Java assignment final 12.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment final 12.1" />
+    <MESSAGE value="intro to Java assignment final 12.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment final 12.3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="73" key="#Notifications" timestamp="1605452692156">
+    <state x="361" y="73" key="#Notifications" timestamp="1607006377424">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="73" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1605452692156" />
+    <state x="361" y="73" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1607006377424" />
     <state x="361" y="73" key="#Project_Structure" timestamp="1600348469817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -508,14 +666,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603405642682" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1606833506347">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1607006411046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606833506347" />
-    <state x="67" y="138" width="1350" height="638" key="DiffContextDialog" timestamp="1605452687923">
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607006411046" />
+    <state x="67" y="138" width="1350" height="638" key="DiffContextDialog" timestamp="1607006463216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="67" y="138" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1605452687923" />
+    <state x="67" y="138" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1607006463216" />
     <state x="549" y="156" key="FileChooserDialogImpl" timestamp="1606533940761">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -524,22 +682,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom" timestamp="1606833892914">
+    <state width="1493" height="170" key="GridCell.Tab.0.bottom" timestamp="1607006685050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606833892914" />
-    <state width="1493" height="192" key="GridCell.Tab.0.center" timestamp="1606833892914">
+    <state width="1493" height="170" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607006685050" />
+    <state width="1493" height="170" key="GridCell.Tab.0.center" timestamp="1607006685050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606833892914" />
-    <state width="1493" height="192" key="GridCell.Tab.0.left" timestamp="1606833892914">
+    <state width="1493" height="170" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607006685050" />
+    <state width="1493" height="170" key="GridCell.Tab.0.left" timestamp="1607006685050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606833892914" />
-    <state width="1493" height="192" key="GridCell.Tab.0.right" timestamp="1606833892914">
+    <state width="1493" height="170" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607006685050" />
+    <state width="1493" height="170" key="GridCell.Tab.0.right" timestamp="1607006685050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606833892914" />
+    <state width="1493" height="170" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607006685050" />
     <state width="1493" height="192" key="GridCell.Tab.1.bottom" timestamp="1606833892914">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -568,14 +726,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="536" y="130" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1605452577594" />
+    <state x="614" y="333" key="VCS.ChangelistChooser" timestamp="1607006576222">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="614" y="333" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1607006576222" />
     <state x="651" y="332" key="VCS.EditChangelistDialog" timestamp="1600408908147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1606833791568">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1607006986709">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606833791568" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607006986709" />
     <state x="541" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605452695633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
