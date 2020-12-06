@@ -117,13 +117,16 @@ public class ImagePanel extends JPanel {
 		imagePanelList.add(dice4);
 		imagePanelList.add(dice5);
 
-		//dice1.setImage(dice1.diceImages[2]);
+
+
+		//
 		//***********************create 5 ImagePanel******************************************
 		dice1CheckBox = new JCheckBox("keep");
 		dice1CheckBox.addActionListener(listener);
 		dicePart1Panel = new JPanel();
 		dicePart1Panel.setLayout(new BoxLayout(dicePart1Panel, BoxLayout.Y_AXIS));
 		dice1CheckBox.setAlignmentX((float)0.4);
+		//dice1.setImage(dice1.diceImages[2]);
 		dice1.scaleImage(0.5);
 		dicePart1Panel.add(dice1);
 		dicePart1Panel.add(dice1CheckBox);
@@ -186,6 +189,7 @@ public class ImagePanel extends JPanel {
 		diceControlPanel.add(rollButton);
 
 //**********************RoLLButtonListener******************
+
 		class RollButtonListener implements ActionListener
 		{
 //			public void actionPerformed(ActionEvent event)
@@ -193,19 +197,22 @@ public class ImagePanel extends JPanel {
 //				int delay = 150;
 //				ActionListener taskPerformer = new ActionListener() {
 					public void actionPerformed(ActionEvent evt) {
-						dice1.setCurrDiceNum();
-						dice1.setImage(dice1.diceImages[dice1.getCurrDiceNum()]);
+
+
+
 						System.out.println(dice1.getCurrDiceNum());
 						for (ImagePanel imagePanel : imagePanelList) {
 							imagePanel.setCurrDiceNum();
 							imagePanel.setImage(imagePanel.diceImages[imagePanel.getCurrDiceNum()]);
+							imagePanel.scaleImage(0.5);
 							//imagePanel.repaint();
 							//System.out.println("dicenum" + currDiceNum + "    panelnum:" + count);
 							//imagePanel.repaint();
 							//dicePart1Panel.repaint(200);
-
+							dice1.setImage(dice1.diceImages[2]);
 						}
 
+						dice1.setImage(dice1.diceImages[2]);
 					}
 				}
 //				Timer t = new Timer(delay, taskPerformer);
@@ -229,6 +236,7 @@ public class ImagePanel extends JPanel {
 
 
 //**********************add components to ImagePanel******************
+
 		dicePanel.add(dicePart1Panel);
 		dicePanel.add(dicePart2Panel);
 		dicePanel.add(dicePart3Panel);
