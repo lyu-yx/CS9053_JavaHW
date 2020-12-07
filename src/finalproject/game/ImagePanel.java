@@ -8,13 +8,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ImagePanel extends JPanel {
-	private static ActionListener listener;
+	static ActionListener listener;
+    private static int currRound = 0;
 	private Image img;
 	private JLabel l;
 	private Image[] diceImages = new Image[6];
-	private List<Integer> imageSequence;
+	static List<Integer> imageSequence;
 	private int currDiceNum;
 
+    private boolean isSelected;
 
 
 	public ImagePanel() {
@@ -100,7 +102,7 @@ public class ImagePanel extends JPanel {
 		JButton rollButton;
 		JCheckBox dice1CheckBox, dice2CheckBox, dice3CheckBox, dice4CheckBox, dice5CheckBox;
 		List<ImagePanel> imagePanelList = new ArrayList<>();
-
+        List<JCheckBox> checkBoxesList = new ArrayList<>();
 
 
 		dice1 = new ImagePanel("pic/die1.png");
@@ -171,11 +173,18 @@ public class ImagePanel extends JPanel {
 		dicePart5Panel.add(dice5CheckBox);
 
 
+
+        checkBoxesList.add(dice1CheckBox);
+        checkBoxesList.add(dice2CheckBox);
+        checkBoxesList.add(dice3CheckBox);
+        checkBoxesList.add(dice4CheckBox);
+        checkBoxesList.add(dice5CheckBox);
+
 		//***************create dice control paenl**************
 		diceControlPanel = new JPanel();
 		diceControlPanel.setLayout(new BoxLayout(diceControlPanel, BoxLayout.Y_AXIS));
 
-		turnLabel = new JLabel("Turn: 0");
+		turnLabel = new JLabel("Turn:" + currRound);
 		rollLabel = new JLabel("Roll: 0");
 		rollButton = new JButton("Roll");
 
@@ -192,44 +201,45 @@ public class ImagePanel extends JPanel {
 
 		class RollButtonListener implements ActionListener
 		{
-//			public void actionPerformed(ActionEvent event)
-//			{
-//				int delay = 150;
-//				ActionListener taskPerformer = new ActionListener() {
-					public void actionPerformed(ActionEvent evt) {
+			public void actionPerformed(ActionEvent event)
+			{
+			    if (currRound < 3) {
+                    int delay = 150;
+                    currRound++;
+                    turnLabel.setText("Turn:  " + currRound);
+                    turnLabel.repaint();
+                    ActionListener taskPerformer = new ActionListener() {
+                        public void actionPerformed(ActionEvent evt) {
+                            //System.out.println(dice1.getCurrDiceNum());
+							imageSequence.clear();
+                            for (int i = 0; i < imagePanelList.size(); i++) {
+                                if (!checkBoxesList.get(i).isSelected()) {
+                                    imagePanelList.get(i).setCurrDiceNum();
+									imageSequence.add(imagePanelList.get(i).currDiceNum);
+                                    imagePanelList.get(i).setImage(imagePanelList.get(i).diceImages[imagePanelList.get(i).getCurrDiceNum()]);
+                                    imagePanelList.get(i).scaleImage(0.5);
+                                    dice1.setImage(dice1.diceImages[2]);
+                                }
+                            }
 
+                            //dice1.setImage(dice1.diceImages[2]);
+                        }
+                    };
+                    Timer t = new Timer(delay, taskPerformer);
+                    t.start();
 
-
-						System.out.println(dice1.getCurrDiceNum());
-						for (ImagePanel imagePanel : imagePanelList) {
-							imagePanel.setCurrDiceNum();
-							imagePanel.setImage(imagePanel.diceImages[imagePanel.getCurrDiceNum()]);
-							imagePanel.scaleImage(0.5);
-							//imagePanel.repaint();
-							//System.out.println("dicenum" + currDiceNum + "    panelnum:" + count);
-							//imagePanel.repaint();
-							//dicePart1Panel.repaint(200);
-							dice1.setImage(dice1.diceImages[2]);
-						}
-
-						dice1.setImage(dice1.diceImages[2]);
-					}
-				}
-//				Timer t = new Timer(delay, taskPerformer);
-//				t.start();
-//
-//				class rollStopListener implements ActionListener {
-//					@Override
-//					public void actionPerformed(ActionEvent e) {
-//						t.stop();
-//					}
-//				}
-//				int randomTime = (int)(Math.random() * 3000);
-//				Timer stop = new Timer(randomTime, new rollStopListener());
-//				stop.start();
-//
-//			}
-//		}
+                    class rollStopListener implements ActionListener {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            t.stop();
+                        }
+                    }
+                    int randomTime = 2000;
+                    Timer stop = new Timer(randomTime, new rollStopListener());
+                    stop.start();
+                }
+			}
+		}
 
 		rollButton.addActionListener(new RollButtonListener());
 

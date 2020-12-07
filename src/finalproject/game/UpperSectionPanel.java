@@ -49,6 +49,7 @@ public class UpperSectionPanel extends JPanel {
         upperPanel.setBorder(BorderFactory.createTitledBorder("Upper Section"));
 
         JPanel acesButtonPanel = new JPanel(new FlowLayout(10));
+        //acesButton.addActionListener();
         acesButtonPanel.add(acesButton);
         upperPanel.add(acesButtonPanel);
         upperPanel.add(acesTextArea);
@@ -90,4 +91,9 @@ public class UpperSectionPanel extends JPanel {
 
         return upperPanel;
     }
+
+
+
+
+
 }
