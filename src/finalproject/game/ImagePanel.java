@@ -213,16 +213,27 @@ public class ImagePanel extends JPanel {
                             //System.out.println(dice1.getCurrDiceNum());
 							imageSequence.clear();
                             for (int i = 0; i < imagePanelList.size(); i++) {
+
                                 if (!checkBoxesList.get(i).isSelected()) {
                                     imagePanelList.get(i).setCurrDiceNum();
+
+                                    //System.out.println(dice1.getCurrDiceNum());
+
 									imageSequence.add(imagePanelList.get(i).currDiceNum);
+
+									ComputeAlgorithms.computeAllPossibleScore(imageSequence);
+									UpperSectionPanel.renewUpperScore(imageSequence);
+									LowerSectionPanel.renewLowerScore(imageSequence);
+
                                     imagePanelList.get(i).setImage(imagePanelList.get(i).diceImages[imagePanelList.get(i).getCurrDiceNum()]);
                                     imagePanelList.get(i).scaleImage(0.5);
-                                    dice1.setImage(dice1.diceImages[2]);
-                                }
-                            }
 
-                            //dice1.setImage(dice1.diceImages[2]);
+                                } else {
+									imageSequence.add(imagePanelList.get(i).currDiceNum);
+								}
+
+                            }
+							System.out.println("size = " + imageSequence.size());
                         }
                     };
                     Timer t = new Timer(delay, taskPerformer);
@@ -234,7 +245,7 @@ public class ImagePanel extends JPanel {
                             t.stop();
                         }
                     }
-                    int randomTime = 2000;
+                    int randomTime = 500;
                     Timer stop = new Timer(randomTime, new rollStopListener());
                     stop.start();
                 }

@@ -41,6 +41,7 @@ public class YahtzeeFrame extends JFrame {
 	
 	public static void main(String args[]) {
 		YahtzeeFrame yahtzee = new YahtzeeFrame();
+
 		yahtzee.setVisible(true);
 	}
 }

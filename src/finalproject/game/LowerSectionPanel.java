@@ -2,15 +2,16 @@ package finalproject.game;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 public class LowerSectionPanel extends JPanel {
 
-    private JButton threeOfaKindButton, fourOfaKindButton, fullHouseButton, 
+    private static JButton threeOfaKindButton, fourOfaKindButton, fullHouseButton,
                     smallStraightButton, largeStraightButton, yahtzeeButton, chanceButton;
-    private JTextArea threeOfaKindTextArea, fourOfaKindTextArea, fullHouseTextArea,
+    private static JTextArea threeOfaKindTextArea, fourOfaKindTextArea, fullHouseTextArea,
                     smallStraightTextArea, largeStraightTextArea, yahtzeeTextArea,
                     chanceTextArea, yahtzeeBonusTextArea, totalofLowerSectionTextArea, grandTotalTextArea;
-    private JLabel yahtzeeBonusLabel, totalofLowerSectionLabel, grandTotalLabel;
+    private static JLabel yahtzeeBonusLabel, totalofLowerSectionLabel, grandTotalLabel;
 
     public LowerSectionPanel() {
         threeOfaKindButton = new JButton("3 of a kind");
@@ -39,7 +40,7 @@ public class LowerSectionPanel extends JPanel {
         yahtzeeTextArea = new JTextArea();
         yahtzeeTextArea.setEditable(false);
         chanceTextArea = new JTextArea();
-        chanceTextArea.setEnabled(false);
+        chanceTextArea.setEditable(false);
         yahtzeeBonusTextArea = new JTextArea();
         yahtzeeBonusTextArea.setEditable(false);
         totalofLowerSectionTextArea = new JTextArea();
@@ -99,4 +100,25 @@ public class LowerSectionPanel extends JPanel {
 
         return lowerPanel;
     }
+
+
+//            threeOfaKindTextArea, fourOfaKindTextArea, fullHouseTextArea,
+//            smallStraightTextArea, largeStraightTextArea, yahtzeeTextArea,
+//            chanceTextArea, yahtzeeBonusTextArea, totalofLowerSectionTextArea, grandTotalTextArea;
+
+    public static void renewLowerScore(List<Integer> imageSequence) {
+        threeOfaKindTextArea.setText(" " + ComputeAlgorithms.threeOfaKind);
+        fourOfaKindTextArea.setText(" " + ComputeAlgorithms.fourOfaKind);
+        fullHouseTextArea.setText(" " + ComputeAlgorithms.fullHouse);
+        smallStraightTextArea.setText(" " + ComputeAlgorithms.smallStraight);
+        largeStraightTextArea.setText(" " + ComputeAlgorithms.largeStraight);
+        yahtzeeTextArea.setText(" " + ComputeAlgorithms.yahtzee);
+        chanceTextArea.setText(" " + ComputeAlgorithms.chance);
+        yahtzeeBonusTextArea.setText(" " + ComputeAlgorithms.yahtzeeBonus);
+        totalofLowerSectionTextArea.setText(" " + ComputeAlgorithms.lowerSum);
+        grandTotalTextArea.setText(" " + ComputeAlgorithms.grandTotal);
+
+    }
+
+
 }

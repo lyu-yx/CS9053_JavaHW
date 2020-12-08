@@ -18,8 +18,6 @@ public class PlayerNamePanel extends JPanel{
 
         playerPanel.add(playerNameLabel);
         playerPanel.add(playerNameText);
-
-
         return playerPanel;
     }
 }

@@ -2,14 +2,15 @@ package finalproject.game;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 public class UpperSectionPanel extends JPanel {
 
-    private JButton acesButton, twosButton, threesButton, foursButton, fivesButton, sixsButton;
-    private JTextArea acesTextArea, twosTextArea, threesTextArea,
+    private static JButton acesButton, twosButton, threesButton, foursButton, fivesButton, sixsButton;
+    private static JTextArea acesTextArea, twosTextArea, threesTextArea,
             foursTextArea, fivesTextArea, sixsTextArea,
-            subTotalTextArea, bonusTextArea, grandTotalTextArea;
-    private JLabel subTotalLabel, bonusLabel, grandTotalLabel;
+            upperTotalTextArea, bonusTextArea, grandTotalTextArea;
+    private static JLabel subTotalLabel, bonusLabel, grandTotalLabel;
 
     public UpperSectionPanel() {
         acesButton = new JButton("Aces");
@@ -36,8 +37,8 @@ public class UpperSectionPanel extends JPanel {
         fivesTextArea.setEditable(false);
         sixsTextArea = new JTextArea();
         sixsTextArea.setEditable(false);
-        subTotalTextArea = new JTextArea();
-        subTotalTextArea.setEditable(false);
+        upperTotalTextArea = new JTextArea();
+        upperTotalTextArea.setEditable(false);
         bonusTextArea = new JTextArea();
         bonusTextArea.setEditable(false);
         grandTotalTextArea = new JTextArea();
@@ -80,7 +81,7 @@ public class UpperSectionPanel extends JPanel {
         upperPanel.add(sixsTextArea);
 
         upperPanel.add(subTotalLabel);
-        upperPanel.add(subTotalTextArea);
+        upperPanel.add(upperTotalTextArea);
 
         upperPanel.add(bonusLabel);
         upperPanel.add(bonusTextArea);
@@ -91,8 +92,24 @@ public class UpperSectionPanel extends JPanel {
 
         return upperPanel;
     }
-
-
+//    JTextArea acesTextArea, twosTextArea, threesTextArea,
+//            foursTextArea, fivesTextArea, sixsTextArea,
+//            subTotalTextArea, bonusTextArea, grandTotalTextArea;
+    public static void renewUpperScore(List<Integer> imageSequence) {
+        acesTextArea.setText(" " + ComputeAlgorithms.acesResult);
+        twosTextArea.setText(" " + ComputeAlgorithms.twosResult);
+        threesTextArea.setText(" " + ComputeAlgorithms.threesResult);
+        foursTextArea.setText(" " + ComputeAlgorithms.foursResult);
+        fivesTextArea.setText(" " + ComputeAlgorithms.fivesResult);
+        sixsTextArea.setText(" " + ComputeAlgorithms.sixsResult);
+        upperTotalTextArea.setText(" " + ComputeAlgorithms.getUpperScoreSum());
+        if (ComputeAlgorithms.upperScoreSum >= 63) {
+            bonusTextArea.setText("" + 35);
+        }
+        int total = 0;
+        total = ComputeAlgorithms.upperScoreSum >= 63 ? 35 + ComputeAlgorithms.upperScoreSum : ComputeAlgorithms.upperScoreSum;
+        grandTotalTextArea.setText("" + total);
+    }
 
 
 
