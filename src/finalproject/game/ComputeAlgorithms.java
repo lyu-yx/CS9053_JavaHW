@@ -2,13 +2,17 @@ package finalproject.game;
 
 import java.util.*;
 
+
+
 public class ComputeAlgorithms {
     static int acesResult, twosResult, threesResult, foursResult,
-               fivesResult, sixsResult, upperScoreSum, upperBouns, upperTotal;
+               fivesResult, sixesResult, upperScoreSum, upperBonus, upperTotal;
     static int threeOfaKind, fourOfaKind, fullHouse, smallStraight,
-               largeStraight, yahtzee, chance, yahtzeeBonus, lowerSum,
+               largeStraight, yahtzee, chance, yahtzeeBonus, lowerScoreSum,
                grandTotal;
+    static int yahtzeeCount = 0;
     static boolean[] isOccupied = new boolean[13];
+    //ordered by:
     //acesResult, twosResult, ThreesResult, FoursResult, fivesResult,
     // sixsResult,threeOfaKind, fourOfaKind, FullHouse, smallStraight,
     // largeStraight, yahtzee, chance
@@ -64,7 +68,7 @@ public class ComputeAlgorithms {
         return result;
     }
 
-    private static int computesixs(List<Integer> imageSequence){
+    private static int computeSixes(List<Integer> imageSequence){
         int result = 0;
         for (int i : imageSequence) {
             if (i == 5) {
@@ -74,12 +78,22 @@ public class ComputeAlgorithms {
         return result;
     }
 
-    static int getUpperScoreSum() {
+    static int computeUpperScoreSum() {
         upperScoreSum = acesResult + twosResult + threesResult
-                        + foursResult + fivesResult + sixsResult;
+                        + foursResult + fivesResult + sixesResult;
         return  upperScoreSum;
     }
 
+    static int computeUpperBonus() {
+        if (upperScoreSum >= 63) {
+            upperBonus = 35;
+        }
+        return upperBonus;
+    }
+
+    static int computeUpperTotal() {
+        return upperTotal = upperBonus + upperScoreSum;
+    }
 //    private int computeThreeOfaKind(List<Integer> imageSequence){
 //            int result = 0;
 //            int count = 0;
@@ -194,8 +208,10 @@ public class ComputeAlgorithms {
         }
 
         for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() == 6) {
-                return 50;
+            if (entry.getValue() == 5) {
+                yahtzee = 50;
+                yahtzeeCount++;
+                return yahtzee;
             }
         }
         return 0;
@@ -204,9 +220,25 @@ public class ComputeAlgorithms {
     private static int computeChance(List<Integer> imageSequence) {
         return ComputeAlgorithms.sumUpSequence(imageSequence);
     }
-    //acesResult, twosResult, ThreesResult, FoursResult, fivesResult,
-    // sixsResult,threeOfaKind, fourOfaKind, FullHouse, smallStraight,
-    // largeStraight, yahtzee, chance
+
+
+
+    static int computeYahtzeeBonus() {
+        if (yahtzee != 0) {
+            yahtzeeBonus = (yahtzeeCount - 1) * 100;
+        }
+        return yahtzeeBonus;
+    }
+
+    static int computeLowerSum() {
+        return lowerScoreSum = threeOfaKind + fourOfaKind + fullHouse
+                             + smallStraight + largeStraight + yahtzee
+                             + chance + yahtzeeBonus;
+    }
+
+    static int computeGrandtotal() {
+        return lowerScoreSum + upperScoreSum;
+    }
 
 
     public static void computeAllPossibleScore(List<Integer> imageSequence) {
@@ -221,7 +253,7 @@ public class ComputeAlgorithms {
         if (!isOccupied[4])
             fivesResult = computeFives(imageSequence);
         if (!isOccupied[5])
-            sixsResult = computesixs(imageSequence);
+            sixesResult = computeSixes(imageSequence);
         if (!isOccupied[6])
             threeOfaKind = computeThreeOfaKind(imageSequence);
         if (!isOccupied[7])
@@ -236,6 +268,46 @@ public class ComputeAlgorithms {
             yahtzee = computeYahtzee(imageSequence);
         if (!isOccupied[12])
             chance = computeChance(imageSequence);
+    }
+
+
+    public static void resetAll() {
+        for (int i = 0; i < 5; i++) {
+            ImagePanel.imagePanelList.get(i).setImage(ImagePanel.diceImages[0]);
+            ImagePanel.imagePanelList.get(i).scaleImage(0.5);
+            ImagePanel.checkBoxesList.get(i).setSelected(false);
+
+        }
+        if (!isOccupied[0])//aces
+            acesResult = 0;
+        if (!isOccupied[1])//twos
+            twosResult = 0;
+        if (!isOccupied[2])//threes
+            threesResult = 0;
+        if (!isOccupied[3])//fours
+            foursResult = 0;
+        if (!isOccupied[4])//fives
+            fivesResult = 0;
+        if (!isOccupied[5])//sixes
+            sixesResult = 0;
+        if (!isOccupied[6])//threeOfaKind
+            threeOfaKind = 0;
+        if (!isOccupied[7])//fourOfaKind
+            fourOfaKind = 0;
+        if (!isOccupied[8])//FullHouse
+            fullHouse = 0;
+        if (!isOccupied[9])//smallStraight
+            smallStraight = 0;
+        if (!isOccupied[10])//largeStraight
+            largeStraight = 0;
+        if (!isOccupied[11])//yahtzee
+            yahtzee = 0;
+        if (!isOccupied[12])//chance
+            chance = 0;
+
+
+        UpperSectionPanel.renewUpperScore(ImagePanel.imageSequence);
+        LowerSectionPanel.renewLowerScore(ImagePanel.imageSequence);
     }
 
 

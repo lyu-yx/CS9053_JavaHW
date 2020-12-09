@@ -2,6 +2,8 @@ package finalproject.game;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.List;
 
 public class LowerSectionPanel extends JPanel {
@@ -15,12 +17,32 @@ public class LowerSectionPanel extends JPanel {
 
     public LowerSectionPanel() {
         threeOfaKindButton = new JButton("3 of a kind");
+        ActionListener threeOfaKindButtonListener = new ThreeOfaKindListener();
+        threeOfaKindButton.addActionListener(threeOfaKindButtonListener);
+
         fourOfaKindButton = new JButton("4 of a kind");
+        ActionListener fourOfaKindButtonListener = new FourOfaKindListener();
+        fourOfaKindButton.addActionListener(fourOfaKindButtonListener);
+
         fullHouseButton = new JButton("Full House");
+        ActionListener smallStraightButtonListener = new FullHouseListener();
+        fullHouseButton.addActionListener(smallStraightButtonListener);
+
         smallStraightButton = new JButton("Small Straight");
+        ActionListener fullHouseButtonListener = new SmallStraightListener();
+        smallStraightButton.addActionListener(fullHouseButtonListener);
+
         largeStraightButton = new JButton("Large Straight");
+        ActionListener largeStraightButtonListener = new LargeStraightListener();
+        largeStraightButton.addActionListener(largeStraightButtonListener);
+
         yahtzeeButton = new JButton("Yahtzee");
+        ActionListener yahtzeeButtonListener = new YahtzeeListener();
+        yahtzeeButton.addActionListener(yahtzeeButtonListener);
+
         chanceButton = new JButton("Chance");
+        ActionListener chanceButtonListener = new ChanceListener();
+        chanceButton.addActionListener(chanceButtonListener);
                 
         yahtzeeBonusLabel = new JLabel("Yahtzee Bonus");
         totalofLowerSectionLabel = new JLabel("Total of lower section");
@@ -102,9 +124,6 @@ public class LowerSectionPanel extends JPanel {
     }
 
 
-//            threeOfaKindTextArea, fourOfaKindTextArea, fullHouseTextArea,
-//            smallStraightTextArea, largeStraightTextArea, yahtzeeTextArea,
-//            chanceTextArea, yahtzeeBonusTextArea, totalofLowerSectionTextArea, grandTotalTextArea;
 
     public static void renewLowerScore(List<Integer> imageSequence) {
         threeOfaKindTextArea.setText(" " + ComputeAlgorithms.threeOfaKind);
@@ -114,11 +133,85 @@ public class LowerSectionPanel extends JPanel {
         largeStraightTextArea.setText(" " + ComputeAlgorithms.largeStraight);
         yahtzeeTextArea.setText(" " + ComputeAlgorithms.yahtzee);
         chanceTextArea.setText(" " + ComputeAlgorithms.chance);
-        yahtzeeBonusTextArea.setText(" " + ComputeAlgorithms.yahtzeeBonus);
-        totalofLowerSectionTextArea.setText(" " + ComputeAlgorithms.lowerSum);
-        grandTotalTextArea.setText(" " + ComputeAlgorithms.grandTotal);
-
+        yahtzeeBonusTextArea.setText(" " + ComputeAlgorithms.computeYahtzeeBonus());
+        totalofLowerSectionTextArea.setText(" " + ComputeAlgorithms.computeLowerSum());
+        grandTotalTextArea.setText(" " + ComputeAlgorithms.computeGrandtotal());
     }
 
+
+    //***************************LowerPanel Listeners**********************************
+    private void refresh() {
+        ComputeAlgorithms.resetAll();
+        ImagePanel.currRound = 0;
+        ImagePanel.rollLabel.setText("Roll: " + ImagePanel.currRound);
+        ImagePanel.currTurn++;
+        ImagePanel.turnLabel.setText("Turn: " + ImagePanel.currTurn);
+    }
+
+//            threeOfaKindTextArea, fourOfaKindTextArea, fullHouseTextArea,
+//            smallStraightTextArea, largeStraightTextArea, yahtzeeTextArea,
+//            chanceTextArea, yahtzeeBonusTextArea, totalofLowerSectionTextArea, grandTotalTextArea;
+    class ThreeOfaKindListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            ComputeAlgorithms.isOccupied[6] = true;
+            threeOfaKindTextArea.setBackground(Color.LIGHT_GRAY);
+            threeOfaKindButton.setEnabled(false);
+            refresh();
+        }
+    }
+
+    class FourOfaKindListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            ComputeAlgorithms.isOccupied[7] = true;
+            fourOfaKindTextArea.setBackground(Color.LIGHT_GRAY);
+            fourOfaKindButton.setEnabled(false);
+            refresh();
+        }
+    }
+
+    class FullHouseListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            ComputeAlgorithms.isOccupied[8] = true;
+            fullHouseTextArea.setBackground(Color.LIGHT_GRAY);
+            fullHouseButton.setEnabled(false);
+            refresh();
+        }
+    }
+
+    class SmallStraightListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            ComputeAlgorithms.isOccupied[9] = true;
+            smallStraightTextArea.setBackground(Color.LIGHT_GRAY);
+            smallStraightButton.setEnabled(false);
+            refresh();
+        }
+    }
+
+    class LargeStraightListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            ComputeAlgorithms.isOccupied[10] = true;
+            largeStraightTextArea.setBackground(Color.LIGHT_GRAY);
+            largeStraightButton.setEnabled(false);
+            refresh();
+        }
+    }
+
+    class YahtzeeListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            ComputeAlgorithms.isOccupied[11] = true;
+            yahtzeeTextArea.setBackground(Color.LIGHT_GRAY);
+            yahtzeeButton.setEnabled(false);
+            refresh();
+        }
+    }
+
+    class ChanceListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            ComputeAlgorithms.isOccupied[12] = true;
+            chanceTextArea.setBackground(Color.LIGHT_GRAY);
+            chanceButton.setEnabled(false);
+            refresh();
+        }
+    }
 
 }

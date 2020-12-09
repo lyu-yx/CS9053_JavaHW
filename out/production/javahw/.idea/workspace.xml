@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="" />
+    <list default="true" id="7899fe48-ab10-4a0e-aa90-41db42cf7dd5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/finalproject/game/UpperSectionPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finalproject/game/UpperSectionPanel.java" afterDir="false" />
+    </list>
     <list id="b3a0d35b-d23d-4c84-a699-e8fafccbe013" name="intro to Java assignment final 12.3" comment="">
       <change afterPath="$PROJECT_DIR$/out/production/javahw/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/javahw/.idea/codeStyles/Project.xml" afterDir="false" />
@@ -354,7 +356,8 @@
       <workItem from="1607006763564" duration="282000" />
       <workItem from="1607222404851" duration="23384000" />
       <workItem from="1607347834717" duration="6298000" />
-      <workItem from="1607426534988" duration="227000" />
+      <workItem from="1607426534988" duration="10392000" />
+      <workItem from="1607519043852" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -594,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607354918148</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="intro to Java assignment final 12.8">
+      <created>1607438003555</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1607438003556</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +674,8 @@
     <MESSAGE value="intro to Java assignment final 12.3" />
     <MESSAGE value="intro to Java assignment final 12.6" />
     <MESSAGE value="intro to Java assignment final 12.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment final 12.7" />
+    <MESSAGE value="intro to Java assignment final 12.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro to Java assignment final 12.8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Notifications" timestamp="1607006377424">
@@ -711,10 +722,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="606" y="338" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.0.1536.824@0.0.1536.824" timestamp="1607354053118" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1607354913065">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1607437999870">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607354913065" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607437999870" />
     <state width="476" height="466" key="DebuggerActiveHint" timestamp="1607354874054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -731,22 +742,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1493" height="96" key="GridCell.Tab.0.bottom" timestamp="1607354987023">
+    <state width="1493" height="102" key="GridCell.Tab.0.bottom" timestamp="1607440395297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="96" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607354987023" />
-    <state width="1493" height="96" key="GridCell.Tab.0.center" timestamp="1607354987023">
+    <state width="1493" height="102" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607440395297" />
+    <state width="1493" height="102" key="GridCell.Tab.0.center" timestamp="1607440395296">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="96" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607354987023" />
-    <state width="1493" height="96" key="GridCell.Tab.0.left" timestamp="1607354987023">
+    <state width="1493" height="102" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607440395296" />
+    <state width="1493" height="102" key="GridCell.Tab.0.left" timestamp="1607440395296">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="96" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607354987023" />
-    <state width="1493" height="96" key="GridCell.Tab.0.right" timestamp="1607354987023">
+    <state width="1493" height="102" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607440395296" />
+    <state width="1493" height="102" key="GridCell.Tab.0.right" timestamp="1607440395297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="96" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607354987023" />
+    <state width="1493" height="102" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607440395297" />
     <state width="1493" height="96" key="GridCell.Tab.1.bottom" timestamp="1607354987024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -815,10 +826,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1607354923673">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1607438007616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607354923673" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607438007616" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1607353892178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -831,6 +842,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="483" y="659" width="608" height="231" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1607262783120" />
+    <state x="499" y="182" key="extract.method.dialog" timestamp="1607434164250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="182" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1607434164250" />
     <state x="560" y="214" key="git4idea.merge.GitMergeDialog" timestamp="1605452662196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

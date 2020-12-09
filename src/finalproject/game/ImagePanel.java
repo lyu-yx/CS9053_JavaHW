@@ -9,15 +9,16 @@ import java.util.List;
 
 public class ImagePanel extends JPanel {
 	static ActionListener listener;
-    private static int currRound = 0;
+    static int currRound = 0, currTurn = 0;
 	private Image img;
 	private JLabel l;
-	private Image[] diceImages = new Image[6];
+	static Image[] diceImages = new Image[6];
+	static List<ImagePanel> imagePanelList;
 	static List<Integer> imageSequence;
+	static List<JCheckBox> checkBoxesList;
 	private int currDiceNum;
-
     private boolean isSelected;
-
+	static JLabel turnLabel, rollLabel;
 
 	public ImagePanel() {
 		for (int i=0;i<6;i++) {
@@ -97,19 +98,19 @@ public class ImagePanel extends JPanel {
     public static JPanel createDicePanel() {
 		JPanel dicePanel = new JPanel(new GridLayout(6,1,20,20));
 		JPanel dicePart1Panel, dicePart2Panel, dicePart3Panel, dicePart4Panel, dicePart5Panel, diceControlPanel;
-		JLabel turnLabel, rollLabel;
+
 		ImagePanel dice1, dice2, dice3, dice4, dice5;
 		JButton rollButton;
 		JCheckBox dice1CheckBox, dice2CheckBox, dice3CheckBox, dice4CheckBox, dice5CheckBox;
-		List<ImagePanel> imagePanelList = new ArrayList<>();
-        List<JCheckBox> checkBoxesList = new ArrayList<>();
+		imagePanelList = new ArrayList<>();
+        checkBoxesList = new ArrayList<>();
 
 
 		dice1 = new ImagePanel("pic/die1.png");
-		dice2 = new ImagePanel("pic/die2.png");
-		dice3 = new ImagePanel("pic/die3.png");
-		dice4 = new ImagePanel("pic/die4.png");
-		dice5 = new ImagePanel("pic/die5.png");
+		dice2 = new ImagePanel("pic/die1.png");
+		dice3 = new ImagePanel("pic/die1.png");
+		dice4 = new ImagePanel("pic/die1.png");
+		dice5 = new ImagePanel("pic/die1.png");
 
 
 
@@ -185,7 +186,7 @@ public class ImagePanel extends JPanel {
 		diceControlPanel.setLayout(new BoxLayout(diceControlPanel, BoxLayout.Y_AXIS));
 
 		turnLabel = new JLabel("Turn:" + currRound);
-		rollLabel = new JLabel("Roll: 0");
+		rollLabel = new JLabel("Roll: " + currTurn);
 		rollButton = new JButton("Roll");
 
 
@@ -206,8 +207,8 @@ public class ImagePanel extends JPanel {
 			    if (currRound < 3) {
                     int delay = 150;
                     currRound++;
-                    turnLabel.setText("Turn:  " + currRound);
-                    turnLabel.repaint();
+                    rollLabel.setText("Roll: " + currRound);
+                    rollLabel.repaint();
                     ActionListener taskPerformer = new ActionListener() {
                         public void actionPerformed(ActionEvent evt) {
                             //System.out.println(dice1.getCurrDiceNum());
@@ -218,37 +219,45 @@ public class ImagePanel extends JPanel {
                                     imagePanelList.get(i).setCurrDiceNum();
 
                                     //System.out.println(dice1.getCurrDiceNum());
-
 									imageSequence.add(imagePanelList.get(i).currDiceNum);
-
-									ComputeAlgorithms.computeAllPossibleScore(imageSequence);
-									UpperSectionPanel.renewUpperScore(imageSequence);
-									LowerSectionPanel.renewLowerScore(imageSequence);
 
                                     imagePanelList.get(i).setImage(imagePanelList.get(i).diceImages[imagePanelList.get(i).getCurrDiceNum()]);
                                     imagePanelList.get(i).scaleImage(0.5);
 
                                 } else {
 									imageSequence.add(imagePanelList.get(i).currDiceNum);
+									//System.out.println("i = " + i + "curnum = " + imagePanelList.get(i).currDiceNum + "size" + imageSequence.size());
 								}
 
                             }
-							System.out.println("size = " + imageSequence.size());
+							ComputeAlgorithms.computeAllPossibleScore(imageSequence);
+							UpperSectionPanel.renewUpperScore(imageSequence);
+							LowerSectionPanel.renewLowerScore(imageSequence);
+							//System.out.println("size = " + imageSequence.size());
                         }
                     };
+
                     Timer t = new Timer(delay, taskPerformer);
                     t.start();
 
                     class rollStopListener implements ActionListener {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            t.stop();
+
+                        	t.stop();
+//							ComputeAlgorithms.computeAllPossibleScore(imageSequence);
+//							UpperSectionPanel.renewUpperScore(imageSequence);
+//							LowerSectionPanel.renewLowerScore(imageSequence);
                         }
                     }
                     int randomTime = 500;
                     Timer stop = new Timer(randomTime, new rollStopListener());
+
                     stop.start();
-                }
+
+                } else {
+			    	JOptionPane.showMessageDialog(null, "Run out of opportunity, please select a score type");
+				}
 			}
 		}
 
