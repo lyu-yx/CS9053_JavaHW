@@ -143,7 +143,7 @@ public class LowerSectionPanel extends JPanel {
     private void refresh() {
         ComputeAlgorithms.resetAll();
         ImagePanel.currRound = 0;
-        ImagePanel.rollLabel.setText("Roll: " + ImagePanel.currRound);
+        ImagePanel.rollLabel.setText("Start Random Roll");
         ImagePanel.currTurn++;
         ImagePanel.turnLabel.setText("Turn: " + ImagePanel.currTurn);
     }

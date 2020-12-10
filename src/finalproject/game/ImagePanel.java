@@ -124,6 +124,8 @@ public class ImagePanel extends JPanel {
 
 		//
 		//***********************create 5 ImagePanel******************************************
+
+
 		dice1CheckBox = new JCheckBox("keep");
 		dice1CheckBox.addActionListener(listener);
 		dicePart1Panel = new JPanel();
@@ -198,6 +200,27 @@ public class ImagePanel extends JPanel {
 		diceControlPanel.add(rollLabel);
 		diceControlPanel.add(rollButton);
 
+//***********************checkBoxListener*************************
+		class CheckBoxListener implements ActionListener {
+			public void actionPerformed(ActionEvent e) {
+				if (currRound == 0) {
+					JOptionPane.showMessageDialog(null, "First round must be random");
+					for (JCheckBox checkBox : checkBoxesList) {
+						checkBox.setSelected(false);
+					}
+				}
+			}
+		}
+
+		CheckBoxListener boxListener = new CheckBoxListener();
+		dice1CheckBox.addActionListener(boxListener);
+		dice2CheckBox.addActionListener(boxListener);
+		dice3CheckBox.addActionListener(boxListener);
+		dice4CheckBox.addActionListener(boxListener);
+		dice5CheckBox.addActionListener(boxListener);
+
+
+
 //**********************RoLLButtonListener******************
 
 		class RollButtonListener implements ActionListener
@@ -205,16 +228,14 @@ public class ImagePanel extends JPanel {
 			public void actionPerformed(ActionEvent event)
 			{
 			    if (currRound < 3) {
-                    int delay = 150;
-                    currRound++;
-                    rollLabel.setText("Roll: " + currRound);
-                    rollLabel.repaint();
+                  int delay = 150;
+					currRound++;
+					rollLabel.setText("Roll: " + currRound);
+					rollLabel.repaint();
                     ActionListener taskPerformer = new ActionListener() {
                         public void actionPerformed(ActionEvent evt) {
-                            //System.out.println(dice1.getCurrDiceNum());
 							imageSequence.clear();
                             for (int i = 0; i < imagePanelList.size(); i++) {
-
                                 if (!checkBoxesList.get(i).isSelected()) {
                                     imagePanelList.get(i).setCurrDiceNum();
 
@@ -245,16 +266,15 @@ public class ImagePanel extends JPanel {
                         public void actionPerformed(ActionEvent e) {
 
                         	t.stop();
-//							ComputeAlgorithms.computeAllPossibleScore(imageSequence);
-//							UpperSectionPanel.renewUpperScore(imageSequence);
-//							LowerSectionPanel.renewLowerScore(imageSequence);
+							//ComputeAlgorithms.computeAllPossibleScore(imageSequence);
+							UpperSectionPanel.renewUpperScore(imageSequence);
+							LowerSectionPanel.renewLowerScore(imageSequence);
                         }
                     }
-                    int randomTime = 500;
+                    int randomTime = 150;
                     Timer stop = new Timer(randomTime, new rollStopListener());
 
                     stop.start();
-
                 } else {
 			    	JOptionPane.showMessageDialog(null, "Run out of opportunity, please select a score type");
 				}
