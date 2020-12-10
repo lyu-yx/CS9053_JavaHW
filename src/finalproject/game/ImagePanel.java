@@ -106,14 +106,11 @@ public class ImagePanel extends JPanel {
 		imagePanelList = new ArrayList<>();
         checkBoxesList = new ArrayList<>();
 
-
 		dice1 = new ImagePanel("pic/die1.png");
 		dice2 = new ImagePanel("pic/die1.png");
 		dice3 = new ImagePanel("pic/die1.png");
 		dice4 = new ImagePanel("pic/die1.png");
 		dice5 = new ImagePanel("pic/die1.png");
-
-
 
 		imagePanelList.add(dice1);
 		imagePanelList.add(dice2);
@@ -123,9 +120,7 @@ public class ImagePanel extends JPanel {
 
 
 
-		//
-		//***********************create 5 ImagePanel******************************************
-
+//***********************create 5 ImagePanel******************************************
 
 		dice1CheckBox = new JCheckBox("keep");
 		dice1CheckBox.addActionListener(listener);
@@ -184,7 +179,7 @@ public class ImagePanel extends JPanel {
         checkBoxesList.add(dice4CheckBox);
         checkBoxesList.add(dice5CheckBox);
 
-		//***************create dice control paenl**************
+//***********************create dice control paenl**********************
 		diceControlPanel = new JPanel();
 		diceControlPanel.setLayout(new BoxLayout(diceControlPanel, BoxLayout.Y_AXIS));
 
@@ -201,7 +196,7 @@ public class ImagePanel extends JPanel {
 		diceControlPanel.add(rollLabel);
 		diceControlPanel.add(rollButton);
 
-//***********************checkBoxListener*************************
+//***********************checkBoxListener*****************************
 		class CheckBoxListener implements ActionListener {
 			public void actionPerformed(ActionEvent e) {
 				if (currRound == 0) {
@@ -283,8 +278,6 @@ public class ImagePanel extends JPanel {
 		}
 
 		rollButton.addActionListener(new RollButtonListener());
-
-
 
 //**********************add components to ImagePanel******************
 

@@ -15,7 +15,6 @@ public class PlayerNamePanel extends JPanel{
     }
 
     public JPanel createPlayerNamePanel() {
-
         playerPanel.add(playerNameLabel);
         playerPanel.add(playerNameText);
         return playerPanel;
