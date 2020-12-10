@@ -21,6 +21,7 @@ public class ImagePanel extends JPanel {
 	static JLabel turnLabel, rollLabel;
 
 	public ImagePanel() {
+
 		for (int i=0;i<6;i++) {
 			diceImages[i] = new ImageIcon("pic/" + "die"+(i+1) +".png").getImage();
 		}

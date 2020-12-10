@@ -169,7 +169,7 @@ public class ComputeAlgorithms {
         size = map.size();
 
         for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() == 3 && size == 2) {
+            if (entry.getValue() == 3 && size == 2 || computeYahtzee(imageSequence) == 50 && upperAllSelected(isOccupied)) {
                 return 25;
             }
         }
@@ -179,7 +179,8 @@ public class ComputeAlgorithms {
     private static int computeSmallStraight(List<Integer> imageSequence){
         for (int i = 0; i < 3; i++) {
             if (imageSequence.contains(i) && imageSequence.contains(i + 1)
-                && imageSequence.contains(i + 2) && imageSequence.contains(i + 3)) {
+                && imageSequence.contains(i + 2) && imageSequence.contains(i + 3)
+                || computeYahtzee(imageSequence) == 50 && upperAllSelected(isOccupied)) {
                 return 30;
             }
         }
@@ -190,7 +191,8 @@ public class ComputeAlgorithms {
         for (int i = 0; i < 2; i++) {
             if (imageSequence.contains(i) && imageSequence.contains(i + 1)
                 && imageSequence.contains(i + 2) && imageSequence.contains(i + 3)
-                && imageSequence.contains(i + 4)) {
+                && imageSequence.contains(i + 4)
+                || computeYahtzee(imageSequence) == 50 && upperAllSelected(isOccupied)) {
                     return 40;
             }
         }
@@ -240,6 +242,10 @@ public class ComputeAlgorithms {
         return lowerScoreSum + upperScoreSum;
     }
 
+
+    private static boolean upperAllSelected(boolean[] isOccupied) {
+        return isOccupied[0] && isOccupied[1]  && isOccupied[2] && isOccupied[3] && isOccupied[4] && isOccupied[5];
+    }
 
     public static void computeAllPossibleScore(List<Integer> imageSequence) {
         if (!isOccupied[0])

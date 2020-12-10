@@ -135,8 +135,11 @@ public class UpperSectionPanel extends JPanel {
     private void refresh() {
         ComputeAlgorithms.resetAll();
         ImagePanel.currRound = 0;
-        ImagePanel.rollLabel.setText("Roll: " + ImagePanel.currRound);
+        ImagePanel.rollLabel.setText("Start Random Roll");
         ImagePanel.currTurn++;
+        if (ImagePanel.currTurn == 13) {
+            JOptionPane.showMessageDialog(null, "Game Over");
+        }
         ImagePanel.turnLabel.setText("Turn: " + ImagePanel.currTurn);
     }
 

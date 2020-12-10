@@ -25,5 +25,6 @@ public class SaveServer extends JFrame {
 	
 	public static void main(String[] main) {
 		SaveServer saveServer = new SaveServer();
+
 	}
 }

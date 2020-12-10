@@ -7,7 +7,7 @@ public class YahtzeeFrame extends JFrame {
 
 	
 	public YahtzeeFrame() {
-
+		setTitle("Yahtzee");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(450,1040);
 		JPanel scorePanel = new JPanel(new GridLayout(2,1));
@@ -40,6 +40,7 @@ public class YahtzeeFrame extends JFrame {
 
 	
 	public static void main(String args[]) {
+
 		YahtzeeFrame yahtzee = new YahtzeeFrame();
 
 		yahtzee.setVisible(true);
