@@ -19,4 +19,6 @@ public class PlayerNamePanel extends JPanel{
         playerPanel.add(playerNameText);
         return playerPanel;
     }
+
+
 }

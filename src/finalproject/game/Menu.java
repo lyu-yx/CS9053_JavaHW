@@ -3,10 +3,16 @@ package finalproject.game;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 //#############################   Menu Part   ################################################
 
     public class Menu {
+        Connection con;
+        PreparedStatement insertStatement;
+
+
         public JMenu createFileMenu()
         {
             JMenu menu = new JMenu("Game");
@@ -65,12 +71,15 @@ import java.awt.event.ActionListener;
         JMenuItem item = new JMenuItem("Save Game");
         class LoadGameListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
-
+                SaveGame saveGame = new SaveGame();
+                saveGame.insertData();
             }
         }
         ActionListener listener = new LoadGameListener();
         item.addActionListener(listener);
         return item;
     }
+
+
 
 }
