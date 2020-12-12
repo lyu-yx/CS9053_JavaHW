@@ -76,7 +76,10 @@ import java.sql.PreparedStatement;
             JMenuItem item = new JMenuItem("Load Game");
             class LoadGameListener implements ActionListener {
                 public void actionPerformed(ActionEvent e) {
+                    QueryGamePanel queryGamePanel = new QueryGamePanel();
+                    queryGamePanel.setVisible(true);
 
+                    queryGamePanel.QueryGame();
                 }
             }
             ActionListener listener = new LoadGameListener();
@@ -95,7 +98,8 @@ import java.sql.PreparedStatement;
     public JMenuItem createGameSave()
     {
         JMenuItem item = new JMenuItem("Save Game");
-        class LoadGameListener implements ActionListener {
+
+        class SaveGameListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
               try {
                     Socket socket = new Socket("localhost", 8000);
@@ -112,7 +116,7 @@ import java.sql.PreparedStatement;
 
             }
         }
-        ActionListener listener = new LoadGameListener();
+        ActionListener listener = new SaveGameListener();
         item.addActionListener(listener);
         return item;
     }

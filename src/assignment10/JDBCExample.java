@@ -48,7 +48,7 @@ public class JDBCExample {
 
 			ResultSetMetaData rsmd = result.getMetaData(); 
 
-			// in a compplex SQL Query, results could come from multiple tables. 
+			// in a complex SQL Query, results could come from multiple tables.
 			// but in this example the results only come from one table.
 			String tableName = rsmd.getTableName(1); 
 			System.out.println("Table: " + tableName);
