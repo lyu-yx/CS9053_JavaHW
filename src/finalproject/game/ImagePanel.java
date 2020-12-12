@@ -13,11 +13,10 @@ public class ImagePanel extends JPanel {
 	private Image img;
 	private JLabel l;
 	static Image[] diceImages = new Image[6];
-	static List<ImagePanel> imagePanelList;
-	static List<Integer> imageSequence;
-	static List<JCheckBox> checkBoxesList;
+	public static List<ImagePanel> imagePanelList;
+	public static List<Integer> imageSequence;
+	public static List<JCheckBox> checkBoxesList;
 	private int currDiceNum;
-    private boolean isSelected;
 	static JLabel turnLabel, rollLabel;
 
 	public ImagePanel() {

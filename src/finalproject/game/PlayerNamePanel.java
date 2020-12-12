@@ -3,8 +3,8 @@ package finalproject.game;
 import javax.swing.*;
 
 public class PlayerNamePanel extends JPanel{
+    private static JTextField playerNameText;
     private JLabel playerNameLabel;
-    private JTextField playerNameText;
     private JPanel playerPanel;
 
     public PlayerNamePanel() {
@@ -18,6 +18,10 @@ public class PlayerNamePanel extends JPanel{
         playerPanel.add(playerNameLabel);
         playerPanel.add(playerNameText);
         return playerPanel;
+    }
+
+    public static String getPlayerName() {
+        return playerNameText.getText();
     }
 
 

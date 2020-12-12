@@ -5,13 +5,13 @@ import java.util.*;
 
 
 public class ComputeAlgorithms {
-    static int acesResult, twosResult, threesResult, foursResult,
+    public static int acesResult, twosResult, threesResult, foursResult,
                fivesResult, sixesResult, upperScoreSum, upperBonus, upperTotal;
-    static int threeOfaKind, fourOfaKind, fullHouse, smallStraight,
+    public static int threeOfaKind, fourOfaKind, fullHouse, smallStraight,
                largeStraight, yahtzee, chance, yahtzeeBonus, lowerScoreSum,
                grandTotal;
-    static int yahtzeeCount = 0;
-    static boolean[] isOccupied = new boolean[13];
+    private static int yahtzeeCount = 0;
+    public static boolean[] isOccupied = new boolean[13];
     //ordered by:
     //acesResult, twosResult, ThreesResult, FoursResult, fivesResult,
     // sixsResult,threeOfaKind, fourOfaKind, FullHouse, smallStraight,
@@ -78,20 +78,20 @@ public class ComputeAlgorithms {
         return result;
     }
 
-    static int computeUpperScoreSum() {
+    public static int computeUpperScoreSum() {
         upperScoreSum = acesResult + twosResult + threesResult
                         + foursResult + fivesResult + sixesResult;
         return  upperScoreSum;
     }
 
-    static int computeUpperBonus() {
+    public static int computeUpperBonus() {
         if (upperScoreSum >= 63) {
             upperBonus = 35;
         }
         return upperBonus;
     }
 
-    static int computeUpperTotal() {
+    public static int computeUpperTotal() {
         return upperTotal = upperBonus + upperScoreSum;
     }
 //    private int computeThreeOfaKind(List<Integer> imageSequence){
@@ -239,7 +239,7 @@ public class ComputeAlgorithms {
     }
 
     static int computeGrandtotal() {
-        return lowerScoreSum + upperScoreSum;
+        return grandTotal = lowerScoreSum + upperScoreSum;
     }
 
 

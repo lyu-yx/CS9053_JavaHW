@@ -3,6 +3,12 @@ package finalproject.game;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.Socket;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
@@ -11,10 +17,30 @@ import java.sql.PreparedStatement;
     public class Menu {
         Connection con;
         PreparedStatement insertStatement;
+        private byte[] buf = new byte[1024];
+        private DatagramPacket sendPacket, receivePacket;
+        DatagramSocket socket;
+
+
+//        public Menu(YahtzeeFrame yahtzeeFrame) {
+////            this.yahtzeeFrame = yahtzeeFrame;
+//        }
+
 
 
         public JMenu createFileMenu()
         {
+            try {
+                // get a datagram socket
+                socket = new DatagramSocket();
+                InetAddress address = InetAddress.getByName("localhost");
+                sendPacket = new DatagramPacket(buf, buf.length, address, 8000);
+                receivePacket = new DatagramPacket(buf, buf.length);
+            }
+            catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
             JMenu menu = new JMenu("Game");
             menu.add(createGameLoad());
             menu.add(createGameSave());
@@ -71,8 +97,19 @@ import java.sql.PreparedStatement;
         JMenuItem item = new JMenuItem("Save Game");
         class LoadGameListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
-                SaveGame saveGame = new SaveGame();
-                saveGame.insertData();
+              try {
+                    Socket socket = new Socket("localhost", 8000);
+                    ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
+                    Game game = new Game();
+                    out.writeObject(game);
+                    out.flush();
+                    out.close();
+                    socket.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+
+
             }
         }
         ActionListener listener = new LoadGameListener();

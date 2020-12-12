@@ -1,18 +1,27 @@
 package finalproject.server;
 
 
+import finalproject.game.Game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.util.Arrays;
+import java.io.ObjectInputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.Date;
 
 public class SaveServer extends JFrame {
 
 	private JTextArea wordsBox = new JTextArea();
-	private byte[] buf = new byte[256];
+	private byte[] buf = new byte[1024];
+	Connection con;
+	PreparedStatement insertStatement;
+
+
+
 	public SaveServer() {
 		createMainPanel();
 		wordsBox.append("Ready to Accept Connections" + '\n');
@@ -21,39 +30,44 @@ public class SaveServer extends JFrame {
 		setVisible(true);
 
 		try {
-			// Create a server socket
-			DatagramSocket socket = new DatagramSocket(8001);
+			// Create a server saveGameSocket
+			ServerSocket serverSocket = new ServerSocket(8000);
+//			DatagramSocket saveSocket = new DatagramSocket(9000);
 			wordsBox.append("Server started at " + new Date() + '\n');
-			// Create a packet for receiving data
-			DatagramPacket receivePacket = new DatagramPacket(buf, buf.length);
-			// Create a packet for sending data
-			DatagramPacket sendPacket =	new DatagramPacket(buf, buf.length);
+//			// Create a packet for receiving data
+//			DatagramPacket receivePacket = new DatagramPacket(buf, buf.length);
+//			// Create a packet for sending data
+//			DatagramPacket sendPacket =	new DatagramPacket(buf, buf.length);
+
+
+
 
 			while (true) {
-				// Initialize buffer for each iteration
-				Arrays.fill(buf, (byte)0);
-
-				// Receive radius from the client in a packet
-				socket.receive(receivePacket);
-				wordsBox.append("The client host name is " +
-						receivePacket.getAddress().getHostName() +
-						" and port number is " + receivePacket.getPort() + '\n');
-				wordsBox.append("Radius received from client is " +
-						new String(buf).trim() +  '\n');
+//				// Initialize buffer for each iteration
+//				Arrays.fill(buf, (byte)0);
+//				// Receive radius from the client in a packet
+//				saveSocket.receive(receivePacket);
+//				wordsBox.append("The client host name is " +
+//						receivePacket.getAddress().getHostName() +
+//						" and port number is " + receivePacket.getPort() + '\n');
+//				wordsBox.append("Command received " +
+//						new String(buf).trim() +  '\n');
 
 				// Compute area
-				double radius = Double.parseDouble(new String(buf).trim());
-				double area = radius * radius * Math.PI;
-				wordsBox.append("Area is " + area + '\n');
+//				double radius = Double.parseDouble(new String(buf).trim());
+//				double area = radius * radius * Math.PI;
+//				wordsBox.append("Area is " + area + '\n');
+				Socket socket = serverSocket.accept();
+				ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
+				Game game = (Game) objectInputStream.readObject();
+				System.out.println(game.time);
+				SaveGame saveGame = new SaveGame();
 
-				// Send area to the client in a packet
-				sendPacket.setAddress(receivePacket.getAddress());
-				sendPacket.setPort(receivePacket.getPort());
-				sendPacket.setData(new Double(area).toString().getBytes());
-				socket.send(sendPacket);
+				saveGame.insertData(game);
+				wordsBox.append("Insert success at " + new Date() + '\n');
 			}
 		}
-		catch(IOException ex) {
+		catch(IOException | ClassNotFoundException ex) {
 			ex.printStackTrace();
 		}
 

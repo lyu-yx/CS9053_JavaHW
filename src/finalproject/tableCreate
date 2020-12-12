@@ -1,12 +1,14 @@
     CREATE TABLE Game (
-    player_name text,
+    player_name String,
+    date String,
+
     aces int, twos int, threes int,
     fours int, fives int, sixes int,
     upper_sum int, upper_bonus int, upper_total int,
 
     three_of_kind int, four_of_kind int, full_house int,
     small_straight int, large_straight int,
-    yahtzee int, yahtzee_bonus int, lower_sum int, grand_total int,
+    yahtzee int, chance int, yahtzee_bonus int, lower_sum int, grand_total int,
 
     dice1_cur_num int, dice2_cur_num int, dice3_cur_num int, dice4_cur_num int, dice5_cur_num int,
     dice1_checkbox int, dice2_checkbox int, dice3_checkbox int, dice4_checkbox int, dice5_checkbox int,
@@ -14,6 +16,7 @@
     aces_select int, twos_select int, threes_select int,
     fours_select int, fives_select int, sixes_select int,
     three_of_kind_select int, four_of_kind_select int, full_house_select int,
-    small_straight_select int, large_straight_select int, yahtzee_select int,
+    small_straight_select int, large_straight_select int, yahtzee_select int, chance_select int,
+    cur_round int, curr_turn int,
 
     id INTEGER PRIMARY KEY AUTOINCREMENT);
