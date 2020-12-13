@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -80,9 +81,47 @@ import java.sql.PreparedStatement;
                     try {
                         Socket socket = new Socket("localhost", 9000);
                         DataOutputStream out = new DataOutputStream(socket.getOutputStream());
+
                         out.writeInt(1);
                         out.flush();
-                    } catch (IOException ex) {
+
+                        ObjectInputStream fromServer = new ObjectInputStream(socket.getInputStream());
+                        Game game = (Game) fromServer.readObject();
+                        ComputeAlgorithms.acesResult = game.acesResult;
+                        ComputeAlgorithms.twosResult = game.twosResult;
+                        ComputeAlgorithms.threesResult = game.threesResult;
+                        ComputeAlgorithms.foursResult = game.foursResult;
+                        ComputeAlgorithms.fivesResult = game.fivesResult;
+                        ComputeAlgorithms.sixesResult = game.sixesResult;
+                        ComputeAlgorithms.upperScoreSum = game.upperScoreSum;
+                        ComputeAlgorithms.upperBonus = game.upperBonus;
+                        ComputeAlgorithms.upperTotal = game.upperTotal;
+                        ComputeAlgorithms.threeOfaKind = game.threeOfaKind;
+                        ComputeAlgorithms.fourOfaKind = game.fourOfaKind;
+                        ComputeAlgorithms.fullHouse = game.fullHouse;
+                        ComputeAlgorithms.smallStraight = game.smallStraight;
+                        ComputeAlgorithms.largeStraight = game.largeStraight;
+                        ComputeAlgorithms.yahtzee = game.yahtzee;
+                        ComputeAlgorithms.yahtzeeBonus = game.yahtzeeBonus;
+                        ComputeAlgorithms.chance = game.chance;
+                        ComputeAlgorithms.lowerScoreSum = game.lowerScoreSum;
+                        ComputeAlgorithms.grandTotal = game.grandTotal;
+//                        ImagePanel.imageSequence.set(0, game.diceNum[0]);
+//                        ImagePanel.imageSequence.set(1, game.diceNum[1]);
+//                        ImagePanel.imageSequence.set(2, game.diceNum[2]);
+//                        ImagePanel.imageSequence.set(3, game.diceNum[3]);
+//                        ImagePanel.imageSequence.set(4, game.diceNum[4]);
+//                        ImagePanel.imagePanelList.get(1).setSpecificDiceNum(game.imageSequence.get(1));
+//                        ImagePanel.imagePanelList.get(2).setSpecificDiceNum(game.imageSequence.get(2));
+//                        ImagePanel.imagePanelList.get(3).setSpecificDiceNum(game.imageSequence.get(3));
+//                        ImagePanel.imagePanelList.get(4).setSpecificDiceNum(game.imageSequence.get(4));
+
+                        ComputeAlgorithms.isOccupied = game.isOccupied;
+
+                        ImagePanel.currRound = game.currRound;
+                        ImagePanel.currTurn = game.currTurn;
+                    ComputeAlgorithms.resetAll();
+                    } catch (IOException | ClassNotFoundException ex) {
                         ex.printStackTrace();
                     }
 

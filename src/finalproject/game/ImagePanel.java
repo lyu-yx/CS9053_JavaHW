@@ -94,7 +94,9 @@ public class ImagePanel extends JPanel {
 	public void setCurrDiceNum() {
 		currDiceNum = (int)(Math.random() * 6);
 	}
-
+	public void setSpecificDiceNum(int i) {
+		currDiceNum = i;
+	}
     public static JPanel createDicePanel() {
 		JPanel dicePanel = new JPanel(new GridLayout(6,1,20,20));
 		JPanel dicePart1Panel, dicePart2Panel, dicePart3Panel, dicePart4Panel, dicePart5Panel, diceControlPanel;

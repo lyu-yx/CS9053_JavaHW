@@ -3,6 +3,7 @@ package finalproject.game;
 import javax.swing.*;
 import java.io.Serializable;
 import java.util.Calendar;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Game implements Serializable {
@@ -16,7 +17,8 @@ public class Game implements Serializable {
     public List<JCheckBox> checkBoxesList;            //5
     public String userName;                           //2
     public String time;
-
+    public int[] diceNum = new int[5];
+    public boolean[] checkBox = new boolean[5];
     public Game() {
         acesResult = ComputeAlgorithms.acesResult;
         twosResult = ComputeAlgorithms.twosResult;
@@ -44,11 +46,11 @@ public class Game implements Serializable {
         isOccupied = ComputeAlgorithms.isOccupied;
         currRound = ImagePanel.currRound;
         currTurn = ImagePanel.currTurn;
-
+        imageSequence = new LinkedList<>();
         imageSequence = ImagePanel.imageSequence;
         checkBoxesList = ImagePanel.checkBoxesList;
 
-        userName = PlayerNamePanel.getPlayerName();
+        userName = PlayerNamePanel.playerName;
         time = Calendar.getInstance().getTime().toString();
     }
 
