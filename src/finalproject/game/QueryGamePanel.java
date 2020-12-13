@@ -118,10 +118,12 @@ public class QueryGamePanel extends JFrame {
     {
         try {
             ResultSet result;
-            String s = "SELECT player_name, date FROM Game";
+            String s = "SELECT player_name,date FROM Game";
             result = stmt.executeQuery(s);
-            if(result.next()){
-                wordsBox.append(result.toString());
+            while(result.next()){
+                wordsBox.append(result.getString("player_name") + "    ");
+                wordsBox.append(result.getString("date"));
+                wordsBox.append("\n");
             }
 
             // in a complex SQL Query, results could come from multiple tables.
@@ -129,10 +131,7 @@ public class QueryGamePanel extends JFrame {
 //            String tableName = rsmd.getTableName(1);
 //            System.out.println("Table: " + tableName);
 //            System.out.println("Last Names:");
-            while (result.next())
-            {
-                System.out.println(result.getString(1));
-            }
+
         } // try
 
         catch (SQLException sql) { sql.printStackTrace(); }

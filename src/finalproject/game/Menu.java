@@ -3,6 +3,7 @@ package finalproject.game;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.DatagramPacket;
@@ -76,10 +77,15 @@ import java.sql.PreparedStatement;
             JMenuItem item = new JMenuItem("Load Game");
             class LoadGameListener implements ActionListener {
                 public void actionPerformed(ActionEvent e) {
-                    QueryGamePanel queryGamePanel = new QueryGamePanel();
-                    queryGamePanel.setVisible(true);
+                    try {
+                        Socket socket = new Socket("localhost", 9000);
+                        DataOutputStream out = new DataOutputStream(socket.getOutputStream());
+                        out.writeInt(1);
+                        out.flush();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
 
-                    queryGamePanel.QueryGame();
                 }
             }
             ActionListener listener = new LoadGameListener();
