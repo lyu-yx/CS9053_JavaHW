@@ -28,7 +28,22 @@ public class ImagePanel extends JPanel {
 		//setLayout(new FlowLayout(FlowLayout.LEFT));
 
 	}
-	
+
+	public static void repaintAllDice(List<ImagePanel> imagePanelList) {
+		for (int i = 0; i < 5; i++) {
+			imagePanelList.get(i).setImage(diceImages[imageSequence.get(i)]);
+			imagePanelList.get(i).scaleImage(0.5);
+		}
+	}
+
+	public static void repaintAllCheckBox (boolean[] checkBox, List<JCheckBox> checkBoxesList) {
+		for (int i = 0; i < 5; i++) {
+			checkBoxesList.get(i).setSelected(checkBox[i]);
+		}
+	}
+
+
+
 	public ImagePanel(String img) {
 		this(new ImageIcon(img).getImage());
 		for (int i=0;i<6;i++) {

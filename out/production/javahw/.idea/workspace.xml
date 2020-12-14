@@ -241,20 +241,7 @@
       <recent name="D:\NYU class\Intro to Java\javahw\src\assignment10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.YahtzeeFrame">
-    <configuration name="JDBCExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment10.JDBCExample" />
-      <module name="javahw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assignment10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.LoadServer">
     <configuration name="JDBCInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assignment10.JDBCInterface" />
       <module name="javahw" />
@@ -268,12 +255,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoadServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="finalproject.server.LoadServer" />
+      <module name="javahw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="finalproject.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SaveServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="finalproject.server.SaveServer" />
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="finalproject.server.*" />
+          <option name="PATTERN" value="finalproject.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -299,7 +299,7 @@
       <module name="javahw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="finalproject.server.*" />
+          <option name="PATTERN" value="finalproject.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -309,11 +309,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoadServer" />
         <item itemvalue="Application.YahtzeeFrame" />
         <item itemvalue="Application.SaveServer" />
         <item itemvalue="Application.WordFinder" />
         <item itemvalue="Application.JDBCInterface" />
-        <item itemvalue="Application.JDBCExample" />
       </list>
     </recent_temporary>
   </component>
@@ -381,7 +381,7 @@
       <workItem from="1607732150014" duration="3090000" />
       <workItem from="1607736393191" duration="19750000" />
       <workItem from="1607770150200" duration="11467000" />
-      <workItem from="1607821314780" duration="234000" />
+      <workItem from="1607821314780" duration="18708000" />
     </task>
     <task id="LOCAL-00001" summary="Backup for Intro to Java HW.">
       <created>1600406538446</created>
@@ -677,7 +677,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607787981380</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="half load function 12.13">
+      <created>1607841229518</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1607841229518</updated>
+    </task>
+    <task id="LOCAL-00044" summary="half load function 12.13">
+      <created>1607872394319</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1607872394319</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Backup for Intro to Java HW. WEEK2 class" />
     <MESSAGE value="revised part2.d. But still have problems in equals()" />
     <MESSAGE value="revised" />
     <MESSAGE value="I/O exceptions" />
@@ -753,7 +766,8 @@
     <MESSAGE value="12.11" />
     <MESSAGE value="Saving function done 12.12" />
     <MESSAGE value="half load function 12.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="half load function 12.12" />
+    <MESSAGE value="half load function 12.13" />
+    <option name="LAST_COMMIT_MESSAGE" value="half load function 12.13" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Notifications" timestamp="1607006377424">
@@ -772,10 +786,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#SQL_Resolution_Scopes/0.0.1536.824@0.0.1536.824" timestamp="1607698779863" />
-    <state x="499" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1607782884052">
+    <state x="499" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1607871353724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607782884052" />
+    <state x="499" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607871353724" />
     <state x="361" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607699808441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -784,10 +798,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1607693205850" />
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1607784061818">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1607860904480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607784061818" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607860904480" />
     <state x="449" y="150" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602199642886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -808,14 +822,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603405642682" />
-    <state x="619" y="340" key="#org.jetbrains.debugger.memory.view.InstancesWindow" timestamp="1607787773740">
+    <state x="591" y="340" key="#org.jetbrains.debugger.memory.view.InstancesWindow" timestamp="1607870702460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="619" y="340" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.0.1536.824@0.0.1536.824" timestamp="1607787773740" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1607787976813">
+    <state x="591" y="340" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.0.1536.824@0.0.1536.824" timestamp="1607870702460" />
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1607872390229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607787976813" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607872390229" />
     <state width="476" height="466" key="DebuggerActiveHint" timestamp="1607354874054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -832,54 +846,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="307" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407055703" />
-    <state width="1493" height="346" key="GridCell.Tab.0.bottom" timestamp="1607788950275">
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom" timestamp="1607872951765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607788950275" />
-    <state width="1493" height="346" key="GridCell.Tab.0.center" timestamp="1607788950275">
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607872951765" />
+    <state width="1493" height="262" key="GridCell.Tab.0.center" timestamp="1607872951765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607788950275" />
-    <state width="1493" height="346" key="GridCell.Tab.0.left" timestamp="1607788950274">
+    <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607872951765" />
+    <state width="1493" height="262" key="GridCell.Tab.0.left" timestamp="1607872951765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607788950274" />
-    <state width="1493" height="346" key="GridCell.Tab.0.right" timestamp="1607788950275">
+    <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607872951765" />
+    <state width="1493" height="262" key="GridCell.Tab.0.right" timestamp="1607872951765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607788950275" />
-    <state width="1493" height="346" key="GridCell.Tab.1.bottom" timestamp="1607788950276">
+    <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607872951765" />
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1607872951767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607788950276" />
-    <state width="1493" height="346" key="GridCell.Tab.1.center" timestamp="1607788950276">
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607872951767" />
+    <state width="1493" height="262" key="GridCell.Tab.1.center" timestamp="1607872951767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607788950276" />
-    <state width="1493" height="346" key="GridCell.Tab.1.left" timestamp="1607788950276">
+    <state width="1493" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607872951767" />
+    <state width="1493" height="262" key="GridCell.Tab.1.left" timestamp="1607872951767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607788950276" />
-    <state width="1493" height="346" key="GridCell.Tab.1.right" timestamp="1607788950276">
+    <state width="1493" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607872951767" />
+    <state width="1493" height="262" key="GridCell.Tab.1.right" timestamp="1607872951767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="346" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607788950276" />
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.bottom" timestamp="1607788950276">
+    <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607872951767" />
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.bottom" timestamp="1607872951766">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607788950276" />
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.center" timestamp="1607788950275">
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607872951766" />
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.center" timestamp="1607872951765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1607788950275" />
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.left" timestamp="1607788950275">
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1607872951765" />
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.left" timestamp="1607872951765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1607788950275" />
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.right" timestamp="1607788950276">
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1607872951765" />
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.right" timestamp="1607872951765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="483" y="659" width="1493" height="346" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1607788950276" />
+    <state x="483" y="659" width="1493" height="262" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1607872951765" />
     <state x="483" y="659" width="594" height="165" key="GridCell.Tab.3.bottom" timestamp="1607262786849">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -924,10 +938,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="332" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1600408908147" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1607787983816">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1607872397191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607787983816" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607872397191" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1607737817674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

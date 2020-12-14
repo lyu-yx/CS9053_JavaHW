@@ -198,7 +198,32 @@ public class UpperSectionPanel extends JPanel {
         }
     }
 
-
+    public static void setUpperButtonAndArea() {
+        if (ComputeAlgorithms.isOccupied[0]) {
+            acesTextArea.setBackground(Color.LIGHT_GRAY);
+            acesButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[1]) {
+            twosTextArea.setBackground(Color.LIGHT_GRAY);
+            twosButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[2]) {
+            threesTextArea.setBackground(Color.LIGHT_GRAY);
+            threesButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[3]) {
+            foursTextArea.setBackground(Color.LIGHT_GRAY);
+            foursButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[4]) {
+            fivesTextArea.setBackground(Color.LIGHT_GRAY);
+            fivesButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[5]) {
+            sixesTextArea.setBackground(Color.LIGHT_GRAY);
+            sixsButton.setEnabled(false);
+        }
+    }
 
 
 }

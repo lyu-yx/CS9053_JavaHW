@@ -106,21 +106,31 @@ import java.sql.PreparedStatement;
                         ComputeAlgorithms.chance = game.chance;
                         ComputeAlgorithms.lowerScoreSum = game.lowerScoreSum;
                         ComputeAlgorithms.grandTotal = game.grandTotal;
-//                        ImagePanel.imageSequence.set(0, game.diceNum[0]);
-//                        ImagePanel.imageSequence.set(1, game.diceNum[1]);
-//                        ImagePanel.imageSequence.set(2, game.diceNum[2]);
-//                        ImagePanel.imageSequence.set(3, game.diceNum[3]);
-//                        ImagePanel.imageSequence.set(4, game.diceNum[4]);
-//                        ImagePanel.imagePanelList.get(1).setSpecificDiceNum(game.imageSequence.get(1));
-//                        ImagePanel.imagePanelList.get(2).setSpecificDiceNum(game.imageSequence.get(2));
-//                        ImagePanel.imagePanelList.get(3).setSpecificDiceNum(game.imageSequence.get(3));
-//                        ImagePanel.imagePanelList.get(4).setSpecificDiceNum(game.imageSequence.get(4));
+                        ImagePanel.imageSequence.add(0, game.diceNum[0]);
+                        ImagePanel.imageSequence.add(1, game.diceNum[1]);
+                        ImagePanel.imageSequence.add(2, game.diceNum[2]);
+                        ImagePanel.imageSequence.add(3, game.diceNum[3]);
+                        ImagePanel.imageSequence.add(4, game.diceNum[4]);
+
+
+
 
                         ComputeAlgorithms.isOccupied = game.isOccupied;
 
                         ImagePanel.currRound = game.currRound;
                         ImagePanel.currTurn = game.currTurn;
-                    ComputeAlgorithms.resetAll();
+
+                        ComputeAlgorithms.computeAllPossibleScore(ImagePanel.imageSequence);
+                        UpperSectionPanel.renewUpperScore(ImagePanel.imageSequence);
+                        LowerSectionPanel.renewLowerScore(ImagePanel.imageSequence);
+                        UpperSectionPanel.setUpperButtonAndArea();
+                        LowerSectionPanel.setLowerButtonAndArea();
+
+                        ImagePanel.rollLabel.setText("Roll: " + ImagePanel.currRound);
+                        ImagePanel.turnLabel.setText("Turn: " + ImagePanel.currTurn);
+                        ImagePanel.repaintAllDice(ImagePanel.imagePanelList);
+                        ImagePanel.repaintAllCheckBox(game.checkBox, ImagePanel.checkBoxesList);
+
                     } catch (IOException | ClassNotFoundException ex) {
                         ex.printStackTrace();
                     }

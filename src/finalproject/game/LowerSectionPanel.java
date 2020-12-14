@@ -217,4 +217,40 @@ public class LowerSectionPanel extends JPanel {
         }
     }
 
+
+
+
+    public static void setLowerButtonAndArea() {
+        if (ComputeAlgorithms.isOccupied[6]) {
+            threeOfaKindTextArea.setBackground(Color.LIGHT_GRAY);
+            threeOfaKindButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[7]) {
+            fourOfaKindTextArea.setBackground(Color.LIGHT_GRAY);
+            fourOfaKindButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[8]) {
+            fullHouseTextArea.setBackground(Color.LIGHT_GRAY);
+            fullHouseButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[9]) {
+            smallStraightTextArea.setBackground(Color.LIGHT_GRAY);
+            smallStraightButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[10]) {
+            largeStraightTextArea.setBackground(Color.LIGHT_GRAY);
+            largeStraightButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[11]) {
+            yahtzeeTextArea.setBackground(Color.LIGHT_GRAY);
+            yahtzeeButton.setEnabled(false);
+        }
+        if (ComputeAlgorithms.isOccupied[12]) {
+            chanceTextArea.setBackground(Color.LIGHT_GRAY);
+            chanceButton.setEnabled(false);
+        }
+    }
+
+
+
 }

@@ -90,11 +90,11 @@ public class LoadServer extends JFrame{
                 returnGame.diceNum[2] = result.getInt(24);
                 returnGame.diceNum[3] = result.getInt(25);
                 returnGame.diceNum[4] = result.getInt(26);
-//                returnGame.checkBoxesList.get(0).setSelected(result.getInt(27) == 1 ? true : false);
-//                returnGame.checkBoxesList.get(1).setSelected(result.getInt(28) == 1 ? true : false);
-//                returnGame.checkBoxesList.get(2).setSelected(result.getInt(29) == 1 ? true : false);
-//                returnGame.checkBoxesList.get(3).setSelected(result.getInt(30) == 1 ? true : false);
-//                returnGame.checkBoxesList.get(4).setSelected(result.getInt(31) == 1 ? true : false);
+                returnGame.checkBox[0] = (result.getInt(27) == 1 ? true : false);
+                returnGame.checkBox[1] = (result.getInt(28) == 1 ? true : false);
+                returnGame.checkBox[2] = (result.getInt(29) == 1 ? true : false);
+                returnGame.checkBox[3] = (result.getInt(30) == 1 ? true : false);
+                returnGame.checkBox[4] = (result.getInt(31) == 1 ? true : false);
                 returnGame.isOccupied[0] = result.getInt(32) == 1 ? true : false;
                 returnGame.isOccupied[1] = result.getInt(33) == 1 ? true : false;
                 returnGame.isOccupied[2] = result.getInt(34) == 1 ? true : false;
@@ -117,7 +117,7 @@ public class LoadServer extends JFrame{
                 outputStream.writeObject(returnGame);
                 Socket socket = new Socket("localhost", 9000);
                 ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
-
+                System.exit(0);
             } catch (SQLException | IOException ex) {
                 ex.printStackTrace();
             }
