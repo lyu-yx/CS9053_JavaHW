@@ -25,12 +25,8 @@ public class SaveServer extends JFrame {
 		try {
 			// Create a server saveGameSocket
 			ServerSocket serverSocket = new ServerSocket(8000);
-//			DatagramSocket saveSocket = new DatagramSocket(9000);
 			wordsBox.append("Server started at " + new Date() + '\n');
-//			// Create a packet for receiving data
-//			DatagramPacket receivePacket = new DatagramPacket(buf, buf.length);
-//			// Create a packet for sending data
-//			DatagramPacket sendPacket =	new DatagramPacket(buf, buf.length);
+
 
 			while (true) {
 				Socket socket = serverSocket.accept();
@@ -44,13 +40,11 @@ public class SaveServer extends JFrame {
 			}
 		}
 
-
 		catch(IOException | ClassNotFoundException ex) {
 			ex.printStackTrace();
 		}
 
 	}
-
 
 	public void createMainPanel() {
 		wordsBox = new JTextArea(35,10);

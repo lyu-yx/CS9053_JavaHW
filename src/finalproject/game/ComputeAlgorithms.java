@@ -2,8 +2,6 @@ package finalproject.game;
 
 import java.util.*;
 
-
-
 public class ComputeAlgorithms {
     public static int acesResult, twosResult, threesResult, foursResult,
                fivesResult, sixesResult, upperScoreSum, upperBonus, upperTotal;
@@ -12,11 +10,6 @@ public class ComputeAlgorithms {
                grandTotal;
     private static int yahtzeeCount = 0;
     public static boolean[] isOccupied = new boolean[13];
-    //ordered by:
-    //acesResult, twosResult, ThreesResult, FoursResult, fivesResult,
-    // sixsResult,threeOfaKind, fourOfaKind, FullHouse, smallStraight,
-    // largeStraight, yahtzee, chance
-
 
     private static int computeAces(List<Integer> imageSequence){
         int result = 0;
@@ -94,26 +87,6 @@ public class ComputeAlgorithms {
     public static int computeUpperTotal() {
         return upperTotal = upperBonus + upperScoreSum;
     }
-//    private int computeThreeOfaKind(List<Integer> imageSequence){
-//            int result = 0;
-//            int count = 0;
-//            for (int i = 0; i < 6; i++) {
-//                for (int j = 0; j < 6; j++) {
-//                    if (imageSequence.get(j) == i) {
-//                        count++;
-//                    }
-//                }
-//                if (count >= 3) {
-//                    for (int currSequence : imageSequence) {
-//                        result += currSequence;
-//                    }
-//                    return result;
-//                }
-//                count = 0;
-//            }
-//            return 0;
-//        }
-
 
     private static int computeThreeOfaKind(List<Integer> imageSequence) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -224,7 +197,6 @@ public class ComputeAlgorithms {
     }
 
 
-
     static int computeYahtzeeBonus() {
         if (yahtzee != 0) {
             yahtzeeBonus = (yahtzeeCount - 1) * 100;
@@ -238,7 +210,7 @@ public class ComputeAlgorithms {
                              + chance + yahtzeeBonus;
     }
 
-    static int computeGrandtotal() {
+    static int computeGrandTotal() {
         return grandTotal = lowerScoreSum + upperScoreSum;
     }
 
@@ -317,8 +289,6 @@ public class ComputeAlgorithms {
     }
 
 
-
-
     public static int sumUpSequence(List<Integer> imageSequence){
         int result = 0;
         for (int currSequence : imageSequence) {
@@ -331,7 +301,5 @@ public class ComputeAlgorithms {
         for (int i : ImagePanel.imageSequence) {
             System.out.println(i);
         }
-
-
     }
 }

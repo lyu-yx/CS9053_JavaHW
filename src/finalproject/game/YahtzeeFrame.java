@@ -5,8 +5,6 @@ import java.awt.*;
 
 public class YahtzeeFrame extends JFrame {
 
-
-
 	public YahtzeeFrame() {
 		setTitle("Yahtzee");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -37,21 +35,12 @@ public class YahtzeeFrame extends JFrame {
 
 		this.add(wholePanel);
 
-//		this.add(upperSectionPanel.createUpperSectionPanel());
-//		this.add(lowerSectionPanel.createLowerSectionPanel());
 	}
-
-
-
-
-
 
 	public static void main(String args[]) {
 
 		YahtzeeFrame yahtzee = new YahtzeeFrame();
-
 		yahtzee.setVisible(true);
-
 
 	}
 }

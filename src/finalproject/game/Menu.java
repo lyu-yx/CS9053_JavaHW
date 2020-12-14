@@ -23,13 +23,6 @@ import java.sql.PreparedStatement;
         private DatagramPacket sendPacket, receivePacket;
         DatagramSocket socket;
 
-
-//        public Menu(YahtzeeFrame yahtzeeFrame) {
-////            this.yahtzeeFrame = yahtzeeFrame;
-//        }
-
-
-
         public JMenu createFileMenu()
         {
             try {
@@ -143,9 +136,6 @@ import java.sql.PreparedStatement;
         }
 
 
-
-
-
     /**
      Creates the Game->Save Game menu item and sets its action listener.
      @return the menu item
@@ -159,7 +149,7 @@ import java.sql.PreparedStatement;
               try {
                     Socket socket = new Socket("localhost", 8000);
                     ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
-                    Game game = new Game();
+                    Game game = new Game(PlayerNamePanel.getPlayerName());
                     out.writeObject(game);
                     out.flush();
                     out.close();
@@ -167,15 +157,10 @@ import java.sql.PreparedStatement;
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
-
-
             }
         }
         ActionListener listener = new SaveGameListener();
         item.addActionListener(listener);
         return item;
     }
-
-
-
 }

@@ -124,7 +124,6 @@ public class LowerSectionPanel extends JPanel {
     }
 
 
-
     public static void renewLowerScore(List<Integer> imageSequence) {
         threeOfaKindTextArea.setText(" " + ComputeAlgorithms.threeOfaKind);
         fourOfaKindTextArea.setText(" " + ComputeAlgorithms.fourOfaKind);
@@ -135,7 +134,7 @@ public class LowerSectionPanel extends JPanel {
         chanceTextArea.setText(" " + ComputeAlgorithms.chance);
         yahtzeeBonusTextArea.setText(" " + ComputeAlgorithms.computeYahtzeeBonus());
         totalofLowerSectionTextArea.setText(" " + ComputeAlgorithms.computeLowerSum());
-        grandTotalTextArea.setText(" " + ComputeAlgorithms.computeGrandtotal());
+        grandTotalTextArea.setText(" " + ComputeAlgorithms.computeGrandTotal());
     }
 
 
@@ -250,7 +249,4 @@ public class LowerSectionPanel extends JPanel {
             chanceButton.setEnabled(false);
         }
     }
-
-
-
 }

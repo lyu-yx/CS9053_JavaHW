@@ -20,27 +20,20 @@ public class QueryGamePanel extends JFrame {
     private ResultSet resultSet;
 
 
-
     public QueryGamePanel() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // set the size correctly
+
         this.setSize(500, 300);
         JPanel panelForTextFields = new JPanel();
         panelForTextFields.setSize(400, 180);
 
-        // there should be objects in the top panel
         createFindField();
         createButton();
-        //panel at the top
         add(createTopPanel(), BorderLayout.NORTH);
-        // There should probably be something passed into the JScrollPane
+
         creatTextArea();
         JScrollPane scrollPane = new JScrollPane(wordsBox);
         add(scrollPane);
-
-
-
-        // and of course you will want them to be properly aligned in the frame
 
     }
 
@@ -86,7 +79,6 @@ public class QueryGamePanel extends JFrame {
         topPanel.add(clearButton);
         topPanel.add(queryButton);
 
-
         add(topPanel);
         return topPanel;
     }
@@ -97,7 +89,6 @@ public class QueryGamePanel extends JFrame {
         wordsBox.setEditable(false);
 
     }
-
 
 
     public void QueryGame()
@@ -125,17 +116,10 @@ public class QueryGamePanel extends JFrame {
                 wordsBox.append(result.getString("date"));
                 wordsBox.append("\n");
             }
-
-            // in a complex SQL Query, results could come from multiple tables.
-            // but in this example the results only come from one table.
-//            String tableName = rsmd.getTableName(1);
-//            System.out.println("Table: " + tableName);
-//            System.out.println("Last Names:");
-
-        } // try
-
-        catch (SQLException sql) { sql.printStackTrace(); }
-
+        }
+        catch (SQLException sql) {
+            sql.printStackTrace();
+        }
     }
 
 }

@@ -42,15 +42,13 @@ public class SaveGame {
         }
 
     }
-
-
 //**************************************insert data**************************************
 
     public void insertData(Game game){
         try
         {
             //2
-            insertStatement.setString(1, game.userName);//
+            insertStatement.setString(1, game.userName);
             insertStatement.setString(2, game.time);
             //upper 9
             insertStatement.setInt(3, game.acesResult);
@@ -105,8 +103,6 @@ public class SaveGame {
 
 
             insertStatement.execute();
-
-            //createMessageBox("Inserted Successfully");
 
         }
         catch(Exception e)

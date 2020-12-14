@@ -27,27 +27,21 @@ public class UpperSectionPanel extends JPanel {
         ActionListener threesButtonListener = new ThreesListener();
         threesButton.addActionListener(threesButtonListener);
 
-
         foursButton = new JButton("Fours");
         ActionListener foursButtonListener = new FoursListener();
         foursButton.addActionListener(foursButtonListener);
-
 
         fivesButton = new JButton("Fives");
         ActionListener fivesButtonListener = new FivesListener();
         fivesButton.addActionListener(fivesButtonListener);
 
-
         sixsButton = new JButton("sixs");
         ActionListener sixesButtonListener = new SixesListener();
         sixsButton.addActionListener(sixesButtonListener);
 
-
-
         subTotalLabel = new JLabel("Score Subtotal");
         bonusLabel = new JLabel("Bonus");
         grandTotalLabel = new JLabel("Grand Total");
-
 
         acesTextArea = new JTextArea();
         acesTextArea.setEditable(false);
@@ -116,9 +110,8 @@ public class UpperSectionPanel extends JPanel {
 
         return upperPanel;
     }
-//    JTextArea acesTextArea, twosTextArea, threesTextArea,
-//            foursTextArea, fivesTextArea, sixsTextArea,
-//            subTotalTextArea, bonusTextArea, grandTotalTextArea;
+
+
     public static void renewUpperScore(List<Integer> imageSequence) {
         acesTextArea.setText(" " + ComputeAlgorithms.acesResult);
         twosTextArea.setText(" " + ComputeAlgorithms.twosResult);
@@ -224,6 +217,4 @@ public class UpperSectionPanel extends JPanel {
             sixsButton.setEnabled(false);
         }
     }
-
-
 }

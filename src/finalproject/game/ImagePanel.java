@@ -42,8 +42,6 @@ public class ImagePanel extends JPanel {
 		}
 	}
 
-
-
 	public ImagePanel(String img) {
 		this(new ImageIcon(img).getImage());
 		for (int i=0;i<6;i++) {
@@ -85,12 +83,10 @@ public class ImagePanel extends JPanel {
 		int newHeight = (int) (height*factor);
 		int newWidth = (int) (width*factor);
 		System.out.println("scaleImage: new size is  " + newWidth + ", "+ newHeight);
-		Image resultingImage = img.getScaledInstance(newWidth, newHeight, 
-												Image.SCALE_DEFAULT);
+		Image resultingImage = img.getScaledInstance(newWidth, newHeight, Image.SCALE_DEFAULT);
 		imageIcon = new ImageIcon(resultingImage);
 		l.setIcon(imageIcon);
-        Dimension size = new Dimension(imageIcon.getIconWidth(), 
-        								imageIcon.getIconHeight());
+        Dimension size = new Dimension(imageIcon.getIconWidth(), imageIcon.getIconHeight());
 
         System.out.println("scaleImage: setting size to " + size.toString());
 		this.img = resultingImage;
@@ -112,7 +108,8 @@ public class ImagePanel extends JPanel {
 	public void setSpecificDiceNum(int i) {
 		currDiceNum = i;
 	}
-    public static JPanel createDicePanel() {
+
+	public static JPanel createDicePanel() {
 		JPanel dicePanel = new JPanel(new GridLayout(6,1,20,20));
 		JPanel dicePart1Panel, dicePart2Panel, dicePart3Panel, dicePart4Panel, dicePart5Panel, diceControlPanel;
 
@@ -134,10 +131,7 @@ public class ImagePanel extends JPanel {
 		imagePanelList.add(dice4);
 		imagePanelList.add(dice5);
 
-
-
 //***********************create 5 ImagePanel******************************************
-
 		dice1CheckBox = new JCheckBox("keep");
 		dice1CheckBox.addActionListener(listener);
 		dicePart1Panel = new JPanel();
@@ -187,8 +181,6 @@ public class ImagePanel extends JPanel {
 		dicePart5Panel.add(dice5);
 		dicePart5Panel.add(dice5CheckBox);
 
-
-
         checkBoxesList.add(dice1CheckBox);
         checkBoxesList.add(dice2CheckBox);
         checkBoxesList.add(dice3CheckBox);
@@ -203,7 +195,6 @@ public class ImagePanel extends JPanel {
 		rollLabel = new JLabel("Roll: " + currTurn);
 		rollButton = new JButton("Roll");
 
-
 		rollButton.setAlignmentX((float)0.5);
 		rollLabel.setAlignmentX((float)0.5);
 		turnLabel.setAlignmentX((float)0.5);
@@ -213,16 +204,16 @@ public class ImagePanel extends JPanel {
 		diceControlPanel.add(rollButton);
 
 //***********************checkBoxListener*****************************
-		class CheckBoxListener implements ActionListener {
-			public void actionPerformed(ActionEvent e) {
-				if (currRound == 0) {
-					JOptionPane.showMessageDialog(null, "First round must be random");
-					for (JCheckBox checkBox : checkBoxesList) {
-						checkBox.setSelected(false);
-					}
+	class CheckBoxListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			if (currRound == 0) {
+				JOptionPane.showMessageDialog(null, "First round must be random");
+				for (JCheckBox checkBox : checkBoxesList) {
+					checkBox.setSelected(false);
 				}
 			}
 		}
+	}
 
 		CheckBoxListener boxListener = new CheckBoxListener();
 		dice1CheckBox.addActionListener(boxListener);
@@ -231,67 +222,60 @@ public class ImagePanel extends JPanel {
 		dice4CheckBox.addActionListener(boxListener);
 		dice5CheckBox.addActionListener(boxListener);
 
-
-
 //**********************RoLLButtonListener******************
-
-		class RollButtonListener implements ActionListener
+//two listener is designed for rolling dice animation, change randomTime to see this
+	class RollButtonListener implements ActionListener
+	{
+		public void actionPerformed(ActionEvent event)
 		{
-			public void actionPerformed(ActionEvent event)
-			{
-			    if (currRound < 3) {
-                  int delay = 150;
-					currRound++;
-					rollLabel.setText("Roll: " + currRound);
-					rollLabel.repaint();
-                    ActionListener taskPerformer = new ActionListener() {
-                        public void actionPerformed(ActionEvent evt) {
-							imageSequence.clear();
-                            for (int i = 0; i < imagePanelList.size(); i++) {
-                                if (!checkBoxesList.get(i).isSelected()) {
-                                    imagePanelList.get(i).setCurrDiceNum();
+			if (currRound < 3) {
+				int delay = 150;
+				currRound++;
+				rollLabel.setText("Roll: " + currRound);
+				rollLabel.repaint();
+				ActionListener taskPerformer = new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						imageSequence.clear();
+						for (int i = 0; i < imagePanelList.size(); i++) {
+							if (!checkBoxesList.get(i).isSelected()) {
+								imagePanelList.get(i).setCurrDiceNum();
 
-                                    //System.out.println(dice1.getCurrDiceNum());
-									imageSequence.add(imagePanelList.get(i).currDiceNum);
+								imageSequence.add(imagePanelList.get(i).currDiceNum);
 
-                                    imagePanelList.get(i).setImage(imagePanelList.get(i).diceImages[imagePanelList.get(i).getCurrDiceNum()]);
-                                    imagePanelList.get(i).scaleImage(0.5);
+								imagePanelList.get(i).setImage(imagePanelList.get(i).diceImages[imagePanelList.get(i).getCurrDiceNum()]);
+								imagePanelList.get(i).scaleImage(0.5);
 
-                                } else {
-									imageSequence.add(imagePanelList.get(i).currDiceNum);
-									//System.out.println("i = " + i + "curnum = " + imagePanelList.get(i).currDiceNum + "size" + imageSequence.size());
-								}
+							} else {
+								imageSequence.add(imagePanelList.get(i).currDiceNum);
+							}
+						}
+						ComputeAlgorithms.computeAllPossibleScore(imageSequence);
+						UpperSectionPanel.renewUpperScore(imageSequence);
+						LowerSectionPanel.renewLowerScore(imageSequence);
+					}
+				};
 
-                            }
-							ComputeAlgorithms.computeAllPossibleScore(imageSequence);
-							UpperSectionPanel.renewUpperScore(imageSequence);
-							LowerSectionPanel.renewLowerScore(imageSequence);
-							//System.out.println("size = " + imageSequence.size());
-                        }
-                    };
+				Timer t = new Timer(delay, taskPerformer);
+				t.start();
 
-                    Timer t = new Timer(delay, taskPerformer);
-                    t.start();
+				class rollStopListener implements ActionListener {
+					@Override
+					public void actionPerformed(ActionEvent e) {
 
-                    class rollStopListener implements ActionListener {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-
-                        	t.stop();
-							//ComputeAlgorithms.computeAllPossibleScore(imageSequence);
-							UpperSectionPanel.renewUpperScore(imageSequence);
-							LowerSectionPanel.renewLowerScore(imageSequence);
-                        }
-                    }
-                    int randomTime = 150;
-                    Timer stop = new Timer(randomTime, new rollStopListener());
-
-                    stop.start();
-                } else {
-			    	JOptionPane.showMessageDialog(null, "Run out of opportunity, please select a score type");
+						t.stop();
+						UpperSectionPanel.renewUpperScore(imageSequence);
+						LowerSectionPanel.renewLowerScore(imageSequence);
+					}
 				}
+				int randomTime = 150;
+				Timer stop = new Timer(randomTime, new rollStopListener());
+
+				stop.start();
+			} else {
+				JOptionPane.showMessageDialog(null, "Run out of opportunity, please select a score type");
 			}
 		}
+	}
 
 		rollButton.addActionListener(new RollButtonListener());
 

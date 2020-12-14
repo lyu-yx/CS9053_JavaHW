@@ -43,7 +43,6 @@ public class LoadServer extends JFrame{
             e.printStackTrace();
         }
 
-
     }
 
     public class LoadButtonListener implements ActionListener {
@@ -62,7 +61,6 @@ public class LoadServer extends JFrame{
                 String gameTime = split[1];
                 String s = "SELECT * FROM Game WHERE date=" + "'" + gameTime + "'";
                 result = select.executeQuery(s);
-
 
                 Game returnGame = new Game();
                 returnGame.userName = result.getString(1);
@@ -111,8 +109,6 @@ public class LoadServer extends JFrame{
                 returnGame.currRound = result.getInt(45);
                 returnGame.currTurn = result.getInt(46);
 
-
-
                 ObjectOutputStream outputStream = new ObjectOutputStream(socket.getOutputStream());
                 outputStream.writeObject(returnGame);
                 Socket socket = new Socket("localhost", 9000);
@@ -142,8 +138,6 @@ public class LoadServer extends JFrame{
     }
 
 
-
-
     public void createMainPanel() {
         try {
             this.setLayout(new BorderLayout());
@@ -156,8 +150,6 @@ public class LoadServer extends JFrame{
             e.printStackTrace();
         }
     }
-
-
 
     public static void main(String[] main) {
         LoadServer loadServer = new LoadServer();

@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class PlayerNamePanel extends JPanel{
     public static JTextField playerNameText;
-    public static String playerName = "defaultName";
+    public static String playerName;
     private JLabel playerNameLabel;
     private JPanel playerPanel;
 
@@ -23,8 +23,7 @@ public class PlayerNamePanel extends JPanel{
     }
 
     public static String getPlayerName() {
-        return playerName = playerNameText.getText();
+        return playerNameText.getText();
     }
-
 
 }
